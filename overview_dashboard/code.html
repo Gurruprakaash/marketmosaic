@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary":"#3525cd","error":"#ba1a1a","secondary-container":"#86f2e4","on-secondary-fixed-variant":"#005049","surface-container":"#e5eeff","outline-variant":"#c7c4d8","on-tertiary-fixed-variant":"#7b2f00","on-error":"#ffffff","on-tertiary-container":"#ffd2be","secondary-fixed-dim":"#6bd8cb","secondary":"#006a61","surface-dim":"#cbdbf5","surface-container-low":"#eff4ff","error-container":"#ffdad6","secondary-fixed":"#89f5e7","tertiary-fixed-dim":"#ffb695","outline":"#777587","surface-container-lowest":"#ffffff","tertiary-fixed":"#ffdbcc","on-error-container":"#93000a","on-background":"#0b1c30","primary-fixed":"#e2dfff","background":"#f8f9ff","on-secondary-fixed":"#00201d","on-tertiary-fixed":"#351000","inverse-surface":"#213145","on-primary-fixed-variant":"#3323cc","inverse-on-surface":"#eaf1ff","surface-tint":"#4d44e3","primary-fixed-dim":"#c3c0ff","inverse-primary":"#c3c0ff","on-secondary":"#ffffff","on-secondary-container":"#006f66","tertiary-container":"#a44100","on-primary":"#ffffff","surface-bright":"#f8f9ff","primary-container":"#4f46e5","on-surface-variant":"#464555","surface-container-high":"#dce9ff","surface-variant":"#d3e4fe","on-primary-fixed":"#0f0069","surface-container-highest":"#d3e4fe","tertiary":"#7e3000","on-tertiary":"#ffffff","on-primary-container":"#dad7ff","surface":"#f8f9ff","on-surface":"#0b1c30"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","gutter":"1rem","margin":"1rem","gutter-desktop":"1.5rem","space-lg":"1rem","space-xs":"0.25rem","space-md":"0.75rem","margin-desktop":"2rem","space-2xl":"2rem","space-xl":"1.5rem"},"fontFamily":{"body-md":["Inter"],"body-lg":["Inter"],"headline-sm":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"display":["Inter"],"caption":["Inter"],"body-sm":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"label-sm":["Inter"]},"fontSize":{"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-sm":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"headline-lg":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg-mobile":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"display":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"600"}],"caption":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.03em","fontWeight":"500"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"500"}],"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low/95 backdrop-blur-xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm overflow-hidden"><img alt="MarketMosaic Fluent Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VPjqs0T6k_5mKBmDrjs49MPYfEFUygTVZEbI4mmh_HK5xdsxsHLqX5BwgfVVef4GiOSCcR_Tq0XY1fQSL4NAPs6msUqTCLat3qs5kGoicwBH9Q9fy4Wwv4j7o4E2HUm7Xm9aOAD6re0-wFICkTr6gFHhG6KZpYjD0Tx_cmr_5qvd1v7zw0Fa1B_ztpJMCayy8HfZru1U6B8Qz-DGeTkXYkZsZW-X8VXjPjjUuA-cmYrdjQX4xnTAF0ePk"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate leading-tight">MarketMosaic</span><span class="font-caption text-caption text-on-surface-variant truncate">Emerging Markets UX</span></div></div><button class="p-1 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" title="Collapse navigation rail" type="button"><span class="material-symbols-outlined text-base">menu_open</span></button></div><nav class="flex flex-col gap-1 px-space-sm pt-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-md relative before:content-[''] before:absolute before:left-1 before:top-2 before:bottom-2 before:w-1 before:bg-surface-container-lowest before:rounded-full"><a aria-current="page" class="group flex items-center gap-space-md px-space-md py-2 rounded-lg transition-all bg-primary-container text-on-primary font-label-md relative before:content-[''] before:absolute before:left-1 before:top-2 before:bottom-2 before:w-1 before:bg-surface-container-lowest before:rounded-full" data-path="overview" href="../overview_dashboard/code.html"><span class="material-symbols-outlined text-lg">grid_view</span><span class="truncate">Overview</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="research-projects" href="../research_projects/code.html"><span class="material-symbols-outlined text-lg">folder_open</span><span class="truncate">Research Projects</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="persona-studio" href="../persona_studio/code.html"><span class="material-symbols-outlined text-lg">groups</span><span class="truncate">Persona Studio</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inclusion-audit" href="../inclusion_audit/code.html"><span class="material-symbols-outlined text-lg">verified_user</span><span class="truncate">Inclusion Audit</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="market-insights" href="../market_insights/code.html"><span class="material-symbols-outlined text-lg">public</span><span class="truncate">Market Insights</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="journey-mapping" href="../journey_mapping/code.html"><span class="material-symbols-outlined text-lg">alt_route</span><span class="truncate">Journey Mapping</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="recommendations-and-reports" href="../recommendations_and_reports/code.html"><span class="material-symbols-outlined text-lg">description</span><span class="truncate">Reports & Recommendations</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="../settings/code.html"><span class="material-symbols-outlined text-lg">settings</span><span class="truncate">Settings</span></a></nav></div><div class="p-space-md m-space-sm bg-surface-container rounded-lg"><div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface mb-0.5"><span class="h-2 w-2 rounded-full bg-secondary"></span><span>Online</span><span class="text-on-surface-variant font-caption text-caption">• Nairobi</span></div><p class="font-caption text-caption text-on-surface-variant truncate">Regional Node: SSA-1</p></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><nav class="hidden sm:flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span class="hover:text-on-surface cursor-pointer">Enterprise Research</span><span class="material-symbols-outlined text-xs">chevron_right</span><span class="font-label-md text-label-md text-on-surface">Global Emerging Markets</span></nav><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-2.5 text-on-surface-variant text-base pointer-events-none">search</span><input class="w-64 lg:w-80 h-9 pl-9 pr-16 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-[0_1px_4px_rgba(0,0,0,0.04)]" placeholder="Search projects, personas, insights..." type="text"/><kbd class="absolute right-2 px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-caption text-caption rounded">Ctrl + F</kbd></div></div><div class="flex items-center gap-space-sm"><button class="h-9 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm rounded-lg flex items-center gap-1 shadow-sm transition-all" type="button"><span class="material-symbols-outlined text-base">add</span><span>New Project</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">notifications</span><span class="absolute top-1.5 right-1.5 h-4 min-w-[1rem] px-1 bg-error text-on-error rounded-full font-caption text-caption flex items-center justify-center leading-none">3</span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">help_outline</span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">dark_mode</span></button><div class="flex items-center gap-2 pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyMAU3Ey7BjPL9nzV2CCAiPPcHWMpFRxWLWr3qNjB4Y8Dot81ACeran64QgCtCnHNGiYZJmR7-kSAQjzdLqBk1ZntklMd3pPTMP4-gmNe04tLE7NyEpxOndQSaZ7HMrpnxdvQkUzpmhQn-4WYWZPH4kSNu54GtTDU8vHqA1kQNWQJdqO03OuzE5nt0UUWnild6M2-aIiZJ4IISVPd5SLCFZpRg-P_wdF3u4UCz5sWfmNG30j-CEIsT"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-secondary rounded-full ring-2 ring-surface"></span></div><span class="material-symbols-outlined text-sm text-on-surface-variant">expand_more</span></div></div></header><main class="flex-1 pt-16 bg-surface w-full pb-8"><div class="flex flex-col w-full">
+<!-- Command Bar / Sub-Header Strip -->
+<div class="w-full bg-surface-container-lowest/80 backdrop-blur-md px-gutter-desktop py-2.5 flex flex-wrap items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-caption text-caption">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>SSA-1 Regional Mesh Active</span>
+</div>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> Realtime Field Sync (Latency: 42ms)</span>
+</div>
+<!-- Quick Tool Group -->
+<div class="flex items-center gap-2">
+<div class="inline-flex rounded-lg bg-surface-container-low p-0.5">
+<button class="px-2.5 py-1 text-on-surface font-label-sm text-label-sm rounded bg-surface-container-lowest shadow-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-xs">dashboard</span> Overview
+        </button>
+<button class="px-2.5 py-1 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm rounded transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-xs">map</span> Geo-Matrix
+        </button>
+<button class="px-2.5 py-1 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm rounded transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-xs">analytics</span> Cohort Telemetry
+        </button>
+</div>
+<div class="h-4 w-[1px] bg-outline-variant/40 mx-1"></div>
+<button class="h-8 px-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-all" type="button">
+<span class="material-symbols-outlined text-sm">tune</span>
+<span>Filters (6 Active)</span>
+</button>
+</div>
+</div>
+<div class="px-gutter-desktop pt-space-lg pb-space-2xl flex flex-col gap-space-xl">
+<!-- Welcome & Executive Operational Header -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary-container/95 via-primary to-primary-container p-space-xl text-on-primary shadow-sm">
+<!-- Decorative ambient subtle graphic -->
+<div class="absolute -right-16 -top-24 w-80 h-80 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute right-40 -bottom-20 w-64 h-64 rounded-full bg-primary-fixed-dim/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-1 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-on-primary/15 font-caption text-caption text-on-primary uppercase tracking-wider font-semibold">Research Operations Console</span>
+<span class="text-on-primary-container font-caption text-caption">Thursday, October 24, 2024</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-primary tracking-tight">Good morning, Dr. Maya Vance</h1>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+            Telemetry pipelines report 94.2% inclusion audit baseline across 6 primary emerging markets. 3 field studies transitioned into Usability Synthesis this morning.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-2.5 self-stretch lg:self-auto">
+<button class="h-9 px-space-md rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container-low font-label-md text-label-md flex items-center gap-1.5 shadow-sm transition-all transform active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-base">add_circle</span>
+<span>New Project</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-on-primary/10 hover:bg-on-primary/20 text-on-primary font-label-md text-label-md flex items-center gap-1.5 backdrop-blur-sm transition-all" type="button">
+<span class="material-symbols-outlined text-base">fact_check</span>
+<span>Quick Audit</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-on-primary/10 hover:bg-on-primary/20 text-on-primary font-label-md text-label-md flex items-center gap-1.5 backdrop-blur-sm transition-all" type="button">
+<span class="material-symbols-outlined text-base">ios_share</span>
+<span>Export Executive Brief</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Cards Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Active Projects</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display text-display text-on-surface tracking-tight">14</span>
+<span class="font-caption text-caption text-secondary font-semibold flex items-center">
+<span class="material-symbols-outlined text-xs">trending_up</span> +3 this mo.
+              </span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-caption text-caption font-semibold">On Track</span>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-caption text-caption bg-surface-container-low px-2 py-1.5 rounded-lg">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">public</span> 6 markets active</span>
+<span class="font-medium text-on-surface">KE, IN, NG, ID, PH, VN</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Personas Synthesized</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display text-display text-on-surface tracking-tight">38</span>
+<span class="font-caption text-caption text-on-surface-variant">Validated</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-base">groups</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-caption text-caption bg-surface-container-low px-2 py-1.5 rounded-lg">
+<span>Representing 9 economies</span>
+<span class="text-secondary font-medium font-mono">1.2M+ Field Sample</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary-container"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Audits Completed</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display text-display text-on-surface tracking-tight">126</span>
+<span class="font-caption text-caption text-secondary font-semibold">94.2%</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-base">verified_user</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-caption text-caption bg-surface-container-low px-2 py-1.5 rounded-lg">
+<span>5 Inclusion Pillars</span>
+<span class="text-primary font-medium">42 automated / 84 field</span>
+</div>
+</div>
+<!-- KPI 4 (Alert / Usability Blockers) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-error"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-error font-medium">Critical Usability Blockers</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display text-display text-error tracking-tight">7</span>
+<span class="font-caption text-caption text-secondary font-medium">-4 resolved this wk</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-caption text-caption font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+            Requires Attention
+          </span>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-caption text-caption bg-error-container/30 px-2 py-1.5 rounded-lg">
+<span class="text-error font-medium">3 Blocking Kenya rollout</span>
+<span class="text-on-surface-variant">4 Hardware / RAM</span>
+</div>
+</div>
+</div>
+<!-- Main Analytics & Visualizations Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: 8 of 12 cols (2/3 width) -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl">
+<!-- SECTION A: Project Progress by Research Pipeline -->
+<div class="rounded-xl bg-surface-container-lowest p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">Research Pipeline Velocity</h2>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-caption text-caption">5 Active Studies</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Stage distribution tracking from initial context discovery to inclusive synthesis</p>
+</div>
+<!-- Pipeline Stage Legend -->
+<div class="flex flex-wrap items-center gap-3 font-caption text-caption text-on-surface-variant">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-primary-fixed-dim"></span>Discovery</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-primary-container"></span>Field Interviews</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-secondary"></span>Usability Testing</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-secondary-container"></span>Synthesis</span>
+</div>
+</div>
+<!-- Stacked Progress Multi-Track -->
+<div class="flex flex-col gap-3.5 pt-1">
+<!-- Study 1 -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  M-Pesa Micro-merchant Terminal
+                  <span class="text-on-surface-variant font-caption text-caption">(Nairobi, Kenya)</span>
+</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">Stage 3: Testing (78%)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-fixed-dim" style="width: 25%"></div>
+<div class="h-full bg-primary-container" style="width: 25%"></div>
+<div class="h-full bg-secondary" style="width: 28%"></div>
+<div class="h-full bg-transparent" style="width: 22%"></div>
+</div>
+</div>
+<!-- Study 2 -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  Ayushman Bharat Rural Telehealth
+                  <span class="text-on-surface-variant font-caption text-caption">(Uttar Pradesh, India)</span>
+</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">Stage 2: Field Interviews (45%)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-fixed-dim" style="width: 25%"></div>
+<div class="h-full bg-primary-container" style="width: 20%"></div>
+<div class="h-full bg-transparent" style="width: 55%"></div>
+</div>
+</div>
+<!-- Study 3 -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                  Warung Pintar Retail POS
+                  <span class="text-on-surface-variant font-caption text-caption">(Surabaya, Indonesia)</span>
+</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">Stage 3: Field Synthesis (62%)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-fixed-dim" style="width: 25%"></div>
+<div class="h-full bg-primary-container" style="width: 25%"></div>
+<div class="h-full bg-secondary" style="width: 12%"></div>
+<div class="h-full bg-transparent" style="width: 38%"></div>
+</div>
+</div>
+<!-- Study 4 -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  FarmPay Offline SMS Wallet
+                  <span class="text-on-surface-variant font-caption text-caption">(Kaduna, Nigeria)</span>
+</span>
+<span class="font-caption text-caption text-secondary font-mono font-medium">Stage 4: Final Audit (95%)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-fixed-dim" style="width: 25%"></div>
+<div class="h-full bg-primary-container" style="width: 25%"></div>
+<div class="h-full bg-secondary" style="width: 25%"></div>
+<div class="h-full bg-secondary-container" style="width: 20%"></div>
+</div>
+</div>
+<!-- Study 5 -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span>
+                  DepEd Offline Learning Slate
+                  <span class="text-on-surface-variant font-caption text-caption">(Cebu, Philippines)</span>
+</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">Stage 1: Discovery (20%)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-fixed-dim" style="width: 20%"></div>
+<div class="h-full bg-transparent" style="width: 80%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION B: Recent Projects Portfolio Interactive Table -->
+<div class="rounded-xl bg-surface-container-lowest p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Recent Projects Portfolio</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live telemetry, contextual scorecards, and regional research leads</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-on-surface-variant text-sm pointer-events-none">filter_list</span>
+<input class="h-8 pl-8 pr-3 bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary w-44" placeholder="Filter projects..." type="text"/>
+</div>
+<button class="h-8 px-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">download</span> Export
+              </button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto -mx-space-xl px-space-xl">
+<table class="w-full text-left font-body-sm text-body-sm border-collapse min-w-[680px]">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-caption text-caption uppercase tracking-wider">
+<th class="py-2.5 px-3 rounded-l-lg font-semibold">Project & Country</th>
+<th class="py-2.5 px-2 font-semibold">Market</th>
+<th class="py-2.5 px-3 font-semibold">Phase</th>
+<th class="py-2.5 px-3 font-semibold">Inclusion Score</th>
+<th class="py-2.5 px-3 font-semibold">Owner</th>
+<th class="py-2.5 px-2 font-semibold">Last Sync</th>
+<th class="py-2.5 px-2 rounded-r-lg text-right font-semibold">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- ROW 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-3 px-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary font-bold font-caption text-caption">MP</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors">M-Pesa Micro-merchant Terminal</span>
+<span class="font-caption text-caption text-on-surface-variant">Kenya • FinTech & USSD</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-caption text-caption font-mono font-medium">KE</span>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-caption text-caption font-medium">Testing (78%)</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 84%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-secondary font-mono">84<span class="text-on-surface-variant font-caption text-caption font-normal">/100</span></span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Close-up professional portrait of an East African UX researcher with glasses and soft natural office lighting, authentic Fluent styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsk-B4WiTAajAfzpsViw84KTtyeKmkmYJ6Dz8nCPUjSpjMBu_a7s9ITboYIw-ZSA3ZPiw5cgK7YT7MsWROG9mcjMkOUcSMThdg1CEx9jwtMce1z0elasHDRSA2v32IVVBr1WEtvfpRevzwqC_n8cNHDPkFv2w1_4Z7oioQYJjKJ4ibv-3mNJ2ct1maglISGX0FQ9DJ7xSk9lAqJtV626K8Ch5Zu-NC9tJ9EzUHXbZBt9g_yE1z9T_v"/>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[100px]">Amina O.</span>
+</div>
+</td>
+<td class="py-3 px-2 text-on-surface-variant font-caption text-caption font-mono">14m ago</td>
+<td class="py-3 px-2 text-right">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</td>
+</tr>
+<!-- ROW 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-3 px-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-secondary font-bold font-caption text-caption">AB</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors">Ayushman Bharat Rural Telehealth</span>
+<span class="font-caption text-caption text-on-surface-variant">India • Public Health & Voice</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-caption text-caption font-mono font-medium">IN</span>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-primary font-caption text-caption font-medium">Interviews (45%)</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container" style="width: 71%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-primary font-mono">71<span class="text-on-surface-variant font-caption text-caption font-normal">/100</span></span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Professional studio portrait of an Indian male senior ethnographer smiling warmly in modern workspace, crisp Windows Fluent aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3vTM6ODCoZ1B498_mj2h4nvYQ4TxtzOfpQnJf4Fjme9PH_OBX0cZUT9oOIzOVL4eGn9hOYRIcF_ADzIlNevMF6lFM_3L0H9YueKXhOWhDkpt-sqNdVNSafafn71RafjVOiHtQ_VNqox3dZVFnqr6EMF3VNp4mDBhzqPA_i-RacEaktowCOJgHnkA0A35AeT4Xd9TBcSplOfH0fGYjvI1v2mESjNiTRxwSTTf_8m4-btoF4fYjSUsK"/>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[100px]">Rajesh K.</span>
+</div>
+</td>
+<td class="py-3 px-2 text-on-surface-variant font-caption text-caption font-mono">1h ago</td>
+<td class="py-3 px-2 text-right">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</td>
+</tr>
+<!-- ROW 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-3 px-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface font-bold font-caption text-caption">WP</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors">Warung Pintar Retail POS</span>
+<span class="font-caption text-caption text-on-surface-variant">Indonesia • Micro-logistics</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-caption text-caption font-mono font-medium">ID</span>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-caption text-caption font-medium">Synthesis (62%)</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 88%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-secondary font-mono">88<span class="text-on-surface-variant font-caption text-caption font-normal">/100</span></span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="South-East Asian female researcher in tech environment with headset, clean lighting and blue-indigo brand accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4cYAC36C-XEhsTN2n_VeTBs8umtqjT88FOw3z5EjjhT6itITgYydHqL3Wa7p9cB62wdalBcQf_Obx7UQ1uKrwIRfr-e5s-wWUMnpfRzf6vQasebxVDODNb4X0DN5ov4gapZ8-gwo3on_dhPUpkTQy3PwAhYtS8fUc_8A44c6WfJ_kt8Nz0g5wZrUNy6FJAlWDay4b5EorB72SryAEcQmQx54fssGGI62yOvx94I_evK6Zqv7pi9rE"/>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[100px]">Dewi S.</span>
+</div>
+</td>
+<td class="py-3 px-2 text-on-surface-variant font-caption text-caption font-mono">3h ago</td>
+<td class="py-3 px-2 text-right">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</td>
+</tr>
+<!-- ROW 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-3 px-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/60 flex items-center justify-center text-on-secondary-container font-bold font-caption text-caption">FP</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors">FarmPay Offline SMS Wallet</span>
+<span class="font-caption text-caption text-on-surface-variant">Nigeria • Offline Financial Inclusion</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-caption text-caption font-mono font-medium">NG</span>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-caption text-caption font-semibold">Final Audit (95%)</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 92%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-secondary font-mono">92<span class="text-on-surface-variant font-caption text-caption font-normal">/100</span></span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="West African male human-factors specialist smiling into camera, dressed in clean collared shirt against neutral soft gradient background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw7-7FGakLaBKBzzUB41RDQaZKIbF1eEuzhauOJiPCYHYyY04NUOE3fa0de2WBsbguOlFbw80fskw5gC-27hx_IaTz1dcrU7zf3K1HItG-dPWSC-LRTsB9QGGUw_YOWA0VdDZ3IpZvingqXPrVF34pSkNNXcXz4CzplgqbMjacnIYXtY3vixu9r9t_KKPjJCCCfsK4uu_06mwLpzdnsTXk7kWi0_DTAdklLZmOlWhIq7ShDDpfYauG"/>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[100px]">Tunde B.</span>
+</div>
+</td>
+<td class="py-3 px-2 text-on-surface-variant font-caption text-caption font-mono">5h ago</td>
+<td class="py-3 px-2 text-right">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</td>
+</tr>
+<!-- ROW 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-3 px-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-bold font-caption text-caption">DE</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors">DepEd Offline Learning Slate</span>
+<span class="font-caption text-caption text-on-surface-variant">Philippines • Rural EdTech</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-caption text-caption font-mono font-medium">PH</span>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-caption text-caption font-medium">Discovery (20%)</span>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 68%"></div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-primary font-mono">68<span class="text-on-surface-variant font-caption text-caption font-normal">/100</span></span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Filipina UX lead and accessibility evaluator in thoughtful portrait pose, modern design studio with subtle screens in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFpa_tMEEPdh3jYOEwulGmL5IY8_LTvNcDRbB2XBN__9-fq3vwmf0zA3BvA4qa42cO6En2LLPdZ5pobi9PTKwzXfKJoGq7dMkndKgXxR3zc4lcD9vtrbhL_u1kM2tepAQk5c03waXBPz3tsxkAnQ2y_8laT3p9LK32YmdlTSiyaTnHX5FzFpm39U4dFP_bsr6d01IVSvW8t9qhhTFAXUIRSbFhiGkfeIpsXbAZg3JbHKBGYeMGeI4E"/>
+<span class="font-body-sm text-body-sm text-on-surface truncate max-w-[100px]">Maria C.</span>
+</div>
+</td>
+<td class="py-3 px-2 text-on-surface-variant font-caption text-caption font-mono">1d ago</td>
+<td class="py-3 px-2 text-right">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer Pagination / Quick Jump -->
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-caption text-caption">
+<span>Showing 5 of 14 studies</span>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors font-label-sm text-label-sm" type="button">View All Projects</button>
+</div>
+</div>
+</div>
+<!-- Field Photo Artifacts Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="relative rounded-xl overflow-hidden shadow-sm group h-40">
+<div class="bg-cover bg-center w-full h-full transition-transform duration-500 group-hover:scale-105" data-alt="Documentary photography of a Kenyan kiosk merchant using a basic smartphone terminal in sunlight under colorful canvas shade, authentic emerging market UX context" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDBi-Ebo7hnfDbmx-iiy8f1RivPzkztQW-sWQCFV99KsIXU5kWYImoOQWwZAWg6xOcuGjfwn_DTqiVR9Z4MIiJZBc4gp_u6J7K7a4jOmrejJIZNjze1h2ILLcQW6j_1e9PWVcVq2h-RF3ilpOx0iAicKv042OOLQZAj7UIl_mhxvDKDOJUj1uGe-eUmp7430caT723E6xrBUdIxDeKXElIaSw8oJxpUlklrLNebXg76mN-d58BIBweM')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent p-3 flex flex-col justify-end">
+<span class="font-caption text-caption text-inverse-on-surface/80">Kibera, Nairobi</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface font-semibold">Direct Sunlight Legibility Check</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden shadow-sm group h-40">
+<div class="bg-cover bg-center w-full h-full transition-transform duration-500 group-hover:scale-105" data-alt="Community health worker in rural Uttar Pradesh India demonstrating maternal care app on ultra-budget 1GB RAM Android handset to village women" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtnXm1RvebysXkHVPfAShXgIb5h1fWw89aSuc3A0aX5--w_jkZFwkvkyW1iZo8euCr0f09-nIpgTCu8333-rq3lKi8fEOrpu9W6RPYsv9XAW4Y7UJdeADBS-BYE8gEPzOAQaRW6G26jwh_lWX6NCnytIDOnr0R0ytoARKmyjx59TR9JZUZKd5-T7zlFTapybxK1SAipejChT4AthGaAzmfLaC-T0SAvgt5r-E4XjTJUt3kBOHremMJ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent p-3 flex flex-col justify-end">
+<span class="font-caption text-caption text-inverse-on-surface/80">Varanasi Cohort</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface font-semibold">Offline Voice Dictation Trial</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden shadow-sm group h-40">
+<div class="bg-cover bg-center w-full h-full transition-transform duration-500 group-hover:scale-105" data-alt="Small warung grocery store owner in Jakarta Indonesia reviewing inventory transactions on a rugged tablet counter setup" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBf3i7nzncaUsuTcQMsXQGqLWaQK5qMfYSjntdeVqfcknRMrxshQ57VGX8R9lqkjIMK47_UPQ4lSFUoSaqAUAvnUhN6aXQE_cqgre3aETSrEcIT9UxgZu5z-E3OHOxYdsBJr-EdeUymvg3NjCA94OmKbFeFx-vbUf2f5YY7flqYWKCBT3VyO8XS_MgNkaO59ac1IJ2qoxg-dXjLF-TQVFl98hoYDOg36UmHY-vSSh634-4bToIjdfdO')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent p-3 flex flex-col justify-end">
+<span class="font-caption text-caption text-inverse-on-surface/80">Surabaya Outpost</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface font-semibold">Thermal Receipt Print Fallback</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: 4 of 12 cols (1/3 width) -->
+<div class="lg:col-span-4 flex flex-col gap-space-xl">
+<!-- SECTION A: Global Emerging Market Inclusion Index -->
+<div class="rounded-xl bg-surface-container-lowest p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Market Inclusion Index</h2>
+<span class="font-caption text-caption text-on-surface-variant">Macro Benchmark Across 8 Pillars</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-caption text-caption font-semibold">Strong Baseline</span>
+</div>
+<!-- Circular Radial Progress Gauge (Inline SVG) -->
+<div class="flex items-center justify-center py-2 relative">
+<svg class="w-40 h-40 transform -rotate-90" viewbox="0 0 120 120">
+<!-- Background ring -->
+<circle class="text-surface-container-high" cx="60" cy="60" fill="transparent" r="50" stroke="currentColor" stroke-width="10"></circle>
+<!-- Progress ring (78.4% -> stroke-dasharray ~ 314, dashoffset = 314 * (1 - 0.784) = 67.8) -->
+<circle class="text-secondary transition-all duration-1000" cx="60" cy="60" fill="transparent" r="50" stroke="currentColor" stroke-dasharray="314.16" stroke-dashoffset="67.8" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
+<span class="font-display text-display text-on-surface font-semibold tracking-tight">78.4<span class="font-headline-sm text-headline-sm text-on-surface-variant">%</span></span>
+<span class="font-caption text-caption text-secondary font-medium tracking-wide uppercase">Score v2.4</span>
+</div>
+</div>
+<!-- Category Scores Mini Bars -->
+<div class="flex flex-col gap-3 pt-1">
+<!-- Category 1 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-caption text-caption">
+<span class="text-on-surface font-medium">Low Bandwidth & 2G/3G Resilience</span>
+<span class="text-on-surface font-mono font-semibold">86%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 86%"></div>
+</div>
+</div>
+<!-- Category 2 (Warning) -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-caption text-caption">
+<span class="text-on-surface font-medium flex items-center gap-1">
+                  Multi-dialect & Vernacular Support
+                  <span class="material-symbols-outlined text-xs text-tertiary-container">warning</span>
+</span>
+<span class="text-tertiary font-mono font-semibold">64%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full" style="width: 64%"></div>
+</div>
+</div>
+<!-- Category 3 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-caption text-caption">
+<span class="text-on-surface font-medium">Low-tier Android & RAM Optimization</span>
+<span class="text-on-surface font-mono font-semibold">82%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 82%"></div>
+</div>
+</div>
+<!-- Category 4 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-caption text-caption">
+<span class="text-on-surface font-medium">Affordability & Micropayment Friction</span>
+<span class="text-on-surface font-mono font-semibold">73%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 73%"></div>
+</div>
+</div>
+<!-- Category 5 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-caption text-caption">
+<span class="text-on-surface font-medium">Accessibility & Motor/Visual Impairment</span>
+<span class="text-on-surface font-mono font-semibold">87%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 87%"></div>
+</div>
+</div>
+</div>
+<button class="w-full mt-1 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors text-center" type="button">
+            Run Pillar Diagnosis
+          </button>
+</div>
+<!-- SECTION B: Priority Usability & Inclusion Alerts -->
+<div class="rounded-xl bg-surface-container-lowest p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Inclusion Alerts</h2>
+<span class="h-5 min-w-[1.25rem] px-1.5 bg-error-container text-on-error-container rounded-full font-caption text-caption font-bold flex items-center justify-center">3</span>
+</div>
+<button class="text-primary font-caption text-caption hover:underline font-medium" type="button">Triage Queue</button>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Alert 1 (Critical) -->
+<div class="p-space-sm rounded-lg bg-error-container/20 flex flex-col gap-1 transition-all hover:bg-error-container/30">
+<div class="flex items-center justify-between">
+<span class="px-1.5 py-0.5 rounded bg-error text-on-error font-caption text-caption font-bold tracking-wide">CRITICAL</span>
+<span class="text-on-surface-variant font-caption text-caption font-mono">18m ago • KE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-snug">
+                2G Timeout on USSD failover fallback in Western Kenya rural clinics
+              </p>
+<div class="flex items-center gap-1 font-caption text-caption text-error font-medium mt-0.5">
+<span class="material-symbols-outlined text-xs">error</span>
+                Transaction drop rate +34%
+              </div>
+</div>
+<!-- Alert 2 (High) -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 transition-all hover:bg-surface-container">
+<div class="flex items-center justify-between">
+<span class="px-1.5 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-caption text-caption font-bold tracking-wide">HIGH</span>
+<span class="text-on-surface-variant font-caption text-caption font-mono">2h ago • IN</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-snug">
+                Hindi script truncation on 320px viewport devices in UP test cohort
+              </p>
+<div class="flex items-center gap-1 font-caption text-caption text-on-surface-variant mt-0.5">
+<span class="material-symbols-outlined text-xs">text_fields</span>
+                Affects JioPhone Next devices
+              </div>
+</div>
+<!-- Alert 3 (Medium) -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 transition-all hover:bg-surface-container">
+<div class="flex items-center justify-between">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-caption text-caption font-bold tracking-wide">MEDIUM</span>
+<span class="text-on-surface-variant font-caption text-caption font-mono">4h ago • ID</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-snug">
+                Biometric fingerprint read error rate >18% for agricultural laborers
+              </p>
+<div class="flex items-center gap-1 font-caption text-caption text-on-surface-variant mt-0.5">
+<span class="material-symbols-outlined text-xs">fingerprint</span>
+                Calloused skin biometric bypass required
+              </div>
+</div>
+</div>
+</div>
+<!-- SECTION C: Live Field Activity Stream -->
+<div class="rounded-xl bg-surface-container-lowest p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Live Field Activity</h2>
+<span class="inline-flex items-center gap-1 font-caption text-caption text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+              Streaming
+            </span>
+</div>
+<div class="relative pl-4 space-y-4 before:content-[''] before:absolute before:left-1.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Note 1: Nairobi -->
+<div class="relative group">
+<div class="absolute -left-[19px] top-1 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-surface-container-lowest"></div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Amina O. • Nairobi Hub</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">12m</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Uploaded 8 audio logs of female stall operators navigating offline batch settlements during thunderstorm power outages.
+                </p>
+</div>
+</div>
+<!-- Note 2: Jakarta -->
+<div class="relative group">
+<div class="absolute -left-[19px] top-1 w-2.5 h-2.5 rounded-full bg-secondary ring-4 ring-surface-container-lowest"></div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Dewi S. • Jakarta</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">48m</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Completed cognitive walkthrough for Bahasa visual icon recognition; low literacy users prefer color-coded receipt categories over text.
+                </p>
+</div>
+</div>
+<!-- Note 3: Mumbai -->
+<div class="relative group">
+<div class="absolute -left-[19px] top-1 w-2.5 h-2.5 rounded-full bg-primary-container ring-4 ring-surface-container-lowest"></div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Rajesh K. • Mumbai Lab</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">2h</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Published latency comparison benchmarks between KaiOS feature phones vs Android Go in 500Kbps throttled field conditions.
+                </p>
+</div>
+</div>
+</div>
+<div class="pt-2">
+<button class="w-full py-2 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span>Open Researcher Dispatch Room</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interaction: Interactive project filter simulation
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterInput = document.querySelector('input[placeholder="Filter projects..."]');
+    if (filterInput) {
+      filterInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        const rows = document.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+          const text = row.innerText.toLowerCase();
+          row.style.display = text.includes(query) ? '' : 'none';
+        });
+      });
+    }
+  });
+</script></main><footer class="h-7 bg-surface-container-low px-gutter-desktop flex items-center justify-between text-on-surface-variant font-caption text-caption"><div class="flex items-center gap-3"><span class="flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>All systems operational</span><span>|</span><span>Inclusion Benchmark: v2.4 Active</span></div><div class="flex items-center gap-3"><span>Sync: Connected (42ms)</span><span>|</span><span>8 Target Markets Tracked</span></div></footer></div></body></html>

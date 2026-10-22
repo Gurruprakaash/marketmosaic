@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary":"#3525cd","error":"#ba1a1a","secondary-container":"#86f2e4","on-secondary-fixed-variant":"#005049","surface-container":"#e5eeff","outline-variant":"#c7c4d8","on-tertiary-fixed-variant":"#7b2f00","on-error":"#ffffff","on-tertiary-container":"#ffd2be","secondary-fixed-dim":"#6bd8cb","secondary":"#006a61","surface-dim":"#cbdbf5","surface-container-low":"#eff4ff","error-container":"#ffdad6","secondary-fixed":"#89f5e7","tertiary-fixed-dim":"#ffb695","outline":"#777587","surface-container-lowest":"#ffffff","tertiary-fixed":"#ffdbcc","on-error-container":"#93000a","on-background":"#0b1c30","primary-fixed":"#e2dfff","background":"#f8f9ff","on-secondary-fixed":"#00201d","on-tertiary-fixed":"#351000","inverse-surface":"#213145","on-primary-fixed-variant":"#3323cc","inverse-on-surface":"#eaf1ff","surface-tint":"#4d44e3","primary-fixed-dim":"#c3c0ff","inverse-primary":"#c3c0ff","on-secondary":"#ffffff","on-secondary-container":"#006f66","tertiary-container":"#a44100","on-primary":"#ffffff","surface-bright":"#f8f9ff","primary-container":"#4f46e5","on-surface-variant":"#464555","surface-container-high":"#dce9ff","surface-variant":"#d3e4fe","on-primary-fixed":"#0f0069","surface-container-highest":"#d3e4fe","tertiary":"#7e3000","on-tertiary":"#ffffff","on-primary-container":"#dad7ff","surface":"#f8f9ff","on-surface":"#0b1c30"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","gutter":"1rem","margin":"1rem","gutter-desktop":"1.5rem","space-lg":"1rem","space-xs":"0.25rem","space-md":"0.75rem","margin-desktop":"2rem","space-2xl":"2rem","space-xl":"1.5rem"},"fontFamily":{"body-md":["Inter"],"body-lg":["Inter"],"headline-sm":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"display":["Inter"],"caption":["Inter"],"body-sm":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"label-sm":["Inter"]},"fontSize":{"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-sm":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"headline-lg":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg-mobile":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"display":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"600"}],"caption":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.03em","fontWeight":"500"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"500"}],"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low/95 backdrop-blur-xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm overflow-hidden"><img alt="MarketMosaic Fluent Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VPjqs0T6k_5mKBmDrjs49MPYfEFUygTVZEbI4mmh_HK5xdsxsHLqX5BwgfVVef4GiOSCcR_Tq0XY1fQSL4NAPs6msUqTCLat3qs5kGoicwBH9Q9fy4Wwv4j7o4E2HUm7Xm9aOAD6re0-wFICkTr6gFHhG6KZpYjD0Tx_cmr_5qvd1v7zw0Fa1B_ztpJMCayy8HfZru1U6B8Qz-DGeTkXYkZsZW-X8VXjPjjUuA-cmYrdjQX4xnTAF0ePk"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate leading-tight">MarketMosaic</span><span class="font-caption text-caption text-on-surface-variant truncate">Emerging Markets UX</span></div></div><button class="p-1 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" title="Collapse navigation rail" type="button"><span class="material-symbols-outlined text-base">menu_open</span></button></div><nav class="flex flex-col gap-1 px-space-sm pt-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-md relative before:content-[''] before:absolute before:left-1 before:top-2 before:bottom-2 before:w-1 before:bg-surface-container-lowest before:rounded-full"><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="overview" href="../overview_dashboard/code.html"><span class="material-symbols-outlined text-lg">grid_view</span><span class="truncate">Overview</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="research-projects" href="../research_projects/code.html"><span class="material-symbols-outlined text-lg">folder_open</span><span class="truncate">Research Projects</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="persona-studio" href="../persona_studio/code.html"><span class="material-symbols-outlined text-lg">groups</span><span class="truncate">Persona Studio</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inclusion-audit" href="../inclusion_audit/code.html"><span class="material-symbols-outlined text-lg">verified_user</span><span class="truncate">Inclusion Audit</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="market-insights" href="../market_insights/code.html"><span class="material-symbols-outlined text-lg">public</span><span class="truncate">Market Insights</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="journey-mapping" href="../journey_mapping/code.html"><span class="material-symbols-outlined text-lg">alt_route</span><span class="truncate">Journey Mapping</span></a><a aria-current="page" class="group flex items-center gap-space-md px-space-md py-2 rounded-lg transition-all bg-primary-container text-on-primary font-label-md relative before:content-[''] before:absolute before:left-1 before:top-2 before:bottom-2 before:w-1 before:bg-surface-container-lowest before:rounded-full" data-path="recommendations-and-reports" href="../recommendations_and_reports/code.html"><span class="material-symbols-outlined text-lg">description</span><span class="truncate">Reports & Recommendations</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="../settings/code.html"><span class="material-symbols-outlined text-lg">settings</span><span class="truncate">Settings</span></a></nav></div><div class="p-space-md m-space-sm bg-surface-container rounded-lg"><div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface mb-0.5"><span class="h-2 w-2 rounded-full bg-secondary"></span><span>Online</span><span class="text-on-surface-variant font-caption text-caption">• Nairobi</span></div><p class="font-caption text-caption text-on-surface-variant truncate">Regional Node: SSA-1</p></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><nav class="hidden sm:flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span class="hover:text-on-surface cursor-pointer">Enterprise Research</span><span class="material-symbols-outlined text-xs">chevron_right</span><span class="font-label-md text-label-md text-on-surface">Global Emerging Markets</span></nav><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-2.5 text-on-surface-variant text-base pointer-events-none">search</span><input class="w-64 lg:w-80 h-9 pl-9 pr-16 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-[0_1px_4px_rgba(0,0,0,0.04)]" placeholder="Search projects, personas, insights..." type="text"/><kbd class="absolute right-2 px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-caption text-caption rounded">Ctrl + F</kbd></div></div><div class="flex items-center gap-space-sm"><button class="h-9 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm rounded-lg flex items-center gap-1 shadow-sm transition-all" type="button"><span class="material-symbols-outlined text-base">add</span><span>New Project</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">notifications</span><span class="absolute top-1.5 right-1.5 h-4 min-w-[1rem] px-1 bg-error text-on-error rounded-full font-caption text-caption flex items-center justify-center leading-none">3</span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">help_outline</span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">dark_mode</span></button><div class="flex items-center gap-2 pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyMAU3Ey7BjPL9nzV2CCAiPPcHWMpFRxWLWr3qNjB4Y8Dot81ACeran64QgCtCnHNGiYZJmR7-kSAQjzdLqBk1ZntklMd3pPTMP4-gmNe04tLE7NyEpxOndQSaZ7HMrpnxdvQkUzpmhQn-4WYWZPH4kSNu54GtTDU8vHqA1kQNWQJdqO03OuzE5nt0UUWnild6M2-aIiZJ4IISVPd5SLCFZpRg-P_wdF3u4UCz5sWfmNG30j-CEIsT"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-secondary rounded-full ring-2 ring-surface"></span></div><span class="material-symbols-outlined text-sm text-on-surface-variant">expand_more</span></div></div></header><main class="flex-1 pt-16 bg-surface w-full pb-8"><div class="flex flex-col w-full">
+<!-- Top Command Ribbon & Header Section -->
+<div class="px-margin-desktop py-space-xl flex flex-col gap-space-lg">
+<!-- Breadcrumb & Workspace Header -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs font-caption text-caption text-on-surface-variant">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Strategic Synthesis</span>
+<span>/</span>
+<span>Module 07</span>
+<span>/</span>
+<span class="text-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Telemetry Synced 4m ago
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Evidence-Based Recommendations & Executive Reports
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Translate empirical field research and inclusion telemetry into prioritized engineering blueprints and product mandates.
+        </p>
+</div>
+<!-- Action Group (Windows 11 Fluent Command Style) -->
+<div class="flex flex-wrap items-center gap-space-sm self-start lg:self-center">
+<button class="h-9 px-space-md bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg shadow-sm flex items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-base text-primary">sync_alt</span>
+<span>Sync to Jira / DevOps</span>
+</button>
+<button class="h-9 px-space-md bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg shadow-sm flex items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-base text-tertiary">picture_as_pdf</span>
+<span>Export Executive Brief</span>
+</button>
+<button class="h-9 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm flex items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-base">add_circle</span>
+<span>+ Create Recommendation</span>
+</button>
+</div>
+</div>
+<!-- KPI Summary Metrics Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Total Backlog</span>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-headline-lg text-headline-lg text-on-surface">24</span>
+<span class="font-caption text-caption text-on-surface-variant">Recommendations</span>
+</div>
+<span class="font-caption text-caption text-secondary flex items-center gap-0.5 mt-1">
+<span class="material-symbols-outlined text-xs">trending_up</span> +4 added from Nairobi cohort
+          </span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">folder_managed</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Quick Wins</span>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-headline-lg text-headline-lg text-secondary">6</span>
+<span class="font-caption text-caption text-on-surface-variant">High Impact / Low Effort</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant mt-1">Estimated dev cost < 2 sprints</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl">bolt</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">Architectural</span>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-headline-lg text-headline-lg text-primary">8</span>
+<span class="font-caption text-caption text-on-surface-variant">Infrastructure Specs</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant mt-1">Requires offline protocol shift</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">lan</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">In Progress</span>
+<div class="flex items-baseline gap-1.5 mt-0.5">
+<span class="font-headline-lg text-headline-lg text-tertiary">10</span>
+<span class="font-caption text-caption text-on-surface-variant">Active Sprints</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant mt-1">4 awaiting QA in field emulator</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-xl">published_with_changes</span>
+</div>
+</div>
+</div>
+<!-- Strategic Priority Matrix Quadrant + Field Imagery Anchor Banner -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- 8 Columns: Interactive Impact vs Effort Matrix -->
+<div class="xl:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-xl">grid_view</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Priority Matrix: Impact vs. Implementation Effort</span>
+</div>
+<div class="flex items-center gap-space-md font-caption text-caption text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Quick Wins (Q1)
+            </span>
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span> Major Projects (Q2)
+            </span>
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span> Low Yield / Hold
+            </span>
+</div>
+</div>
+<!-- The 2x2 Matrix Grid Visual -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md">
+<!-- Matrix Y-Axis Label -->
+<div class="absolute -left-1 top-1/2 -translate-y-1/2 -rotate-90 origin-center font-caption text-caption text-on-surface-variant tracking-wider uppercase font-label-sm">
+            Impact →
+          </div>
+<!-- Matrix X-Axis Label -->
+<div class="text-center font-caption text-caption text-on-surface-variant tracking-wider uppercase font-label-sm mt-1">
+            Implementation Effort →
+          </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-2">
+<!-- Quadrant 1: Quick Wins (High Impact / Low Effort) -->
+<div class="bg-surface-container-lowest/90 rounded-lg p-space-md flex flex-col justify-between shadow-sm min-h-[140px]">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary font-headline-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">stars</span> Quick Wins (6)
+                </span>
+<span class="font-caption text-caption px-2 py-0.5 rounded-full bg-secondary-container/50 text-on-secondary-container">High Impact / Low Effort</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant my-1">
+                Highest ROI changes. Rapid vernacular and asset payload optimizations.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-caption text-caption flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Asset Compression <12MB
+                </span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-caption text-caption flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> SMS Webhook Fallback
+                </span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant font-caption text-caption">+4 more</span>
+</div>
+</div>
+<!-- Quadrant 2: Major Projects (High Impact / High Effort) -->
+<div class="bg-surface-container-lowest/90 rounded-lg p-space-md flex flex-col justify-between shadow-sm min-h-[140px]">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-headline-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">construction</span> Major Projects (9)
+                </span>
+<span class="font-caption text-caption px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed">High Impact / High Effort</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant my-1">
+                Core systemic transformations. Offline architectural SQLite databases.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-caption text-caption flex items-center gap-1 ring-1 ring-primary/30">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> 2G SQLite Offline Queue
+                </span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-caption text-caption flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Swahili Voice Prompts
+                </span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant font-caption text-caption">+7 more</span>
+</div>
+</div>
+<!-- Quadrant 3: Fill-Ins (Low Impact / Low Effort) -->
+<div class="bg-surface-container-lowest/80 rounded-lg p-space-md flex flex-col justify-between shadow-sm min-h-[120px]">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-headline-sm">Fill-Ins / Minor Polish (5)</span>
+<span class="font-caption text-caption px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">Low Impact / Low Effort</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant my-1">
+                Daylight touch-target adjustments and minor glyph padding refinements.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface font-caption text-caption">Glare Touch Zones</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant font-caption text-caption">+4 items</span>
+</div>
+</div>
+<!-- Quadrant 4: De-prioritized / Re-evaluate (Low Impact / High Effort) -->
+<div class="bg-surface-container-lowest/80 rounded-lg p-space-md flex flex-col justify-between shadow-sm min-h-[120px]">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline font-headline-sm">Deprioritized (4)</span>
+<span class="font-caption text-caption px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">Low Impact / High Effort</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant my-1">
+                Complex 3D graphics, heavy animations, and WebRTC peer streaming in rural nodes.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-1 rounded bg-surface-container text-outline font-caption text-caption line-through">AR Storefinder</span>
+<span class="px-2 py-1 rounded bg-surface-container text-outline font-caption text-caption line-through">Live 4K Biometrics</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4 Columns: Field Audit Evidence Anchor Card -->
+<div class="xl:col-span-4 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between overflow-hidden relative">
+<div class="flex flex-col gap-space-sm z-10">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption uppercase tracking-wider text-primary font-label-md">Direct Field Correlation</span>
+<span class="px-2 py-0.5 bg-secondary/10 text-secondary rounded font-caption text-caption">Telemetry Verified</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Field Audit Evidence Base</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Insights generated from 42 qualitative in-situ testing sessions across merchants in Eldoret, Kisumu, and suburban Lagos.
+          </p>
+</div>
+<!-- Telemetry Infographic Thumbnail -->
+<div class="my-space-md rounded-lg overflow-hidden relative h-36 bg-surface-container-high flex flex-col justify-end p-space-md">
+<div class="bg-cover bg-center absolute inset-0 opacity-40" data-alt="Close up photograph of a researcher in an outdoor open market in Kenya testing a mobile transaction application on a basic Android smartphone, sunny warm daylight, authentic documentary style UX field study with natural colors" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA1azXKgtKSyvwDSaFChrWX95jpSH3Zf0N0LKDr1Ja0UuuIN_oPqeNpDFvBJ4klazUmmMSlH4LUrkGY8SW2uElHDlNv55ttz303DPqkEDX8JYDSQSqxfxLsoo0NlD9mXBFcXadCrrP1L7pjxpJYjG9zi4DmlMgo_i9j_PHOEwVNwWXaRsWddr-PrJs3FnBo-ms4UhPvimdrIGd3liwHuIVfZlrQm8Akfte6LMVNB9WKeuSHuXGegL4B')"></div>
+<div class="relative z-10 bg-surface-container-lowest/90 backdrop-blur-md p-2 rounded-lg shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Dropout Rate at 2G EDGE</span>
+<span class="font-headline-sm text-headline-sm text-error">32.4% Failure</span>
+</div>
+<span class="material-symbols-outlined text-error text-2xl">signal_cellular_connected_no_internet_0_bar</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs z-10">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait photo of a young female UX field researcher with braided hair and smart professional casual clothes against a soft studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8403gErldyEslhjHDjlELXxHhJZ9T6ZAYngkbxLxJDiE15cAnMExVhNinoRfDLrRQi-OUcR4EuuAYvPD1d56oFMHmkOmrDbwS3HULgCRQWc1hNMYf4hzzjz0YWo92lGWbtyxd2aLjevY8gNFpqMFPLptsh3pDOx4ODXjEBddnpH1uQZao_mC21ExoESvMz6tip6YQBQcEVFNvsdc5nGZRzh6kAlCpgPRJmtAwkazU5fePyDb_8Df5"/>
+<span class="font-caption text-caption text-on-surface font-label-sm">Lead: Dr. Maya Vance</span>
+</div>
+<button class="text-primary hover:text-primary-container font-label-sm text-label-sm flex items-center gap-0.5" type="button">
+<span>Read Audit Summary</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Dual-Panel Working Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<!-- Left Panel (60% width = col-span-7 or 7.2 of 12) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Backlog Controls Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-1.5">
+<button class="px-space-md py-1.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm transition-all" type="button">
+              All Recommendations (24)
+            </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all" type="button">
+              High Impact (9)
+            </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all" type="button">
+              Architecture (5)
+            </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all" type="button">
+              Vernacular (6)
+            </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-all" type="button">
+              Data Affordability (4)
+            </button>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-auto">
+<button class="p-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface" title="Filter options" type="button">
+<span class="material-symbols-outlined text-base">tune</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface" title="Sort order" type="button">
+<span class="material-symbols-outlined text-base">swap_vert</span>
+</button>
+</div>
+</div>
+<!-- Interactive Recommendation List Cards -->
+<div class="flex flex-col gap-2.5">
+<!-- Row 1 (Selected): Implement Resilient 2G SQLite Offline Synchronization Queue -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md border-l-4 border-primary cursor-pointer transition-all hover:bg-surface-container-low/50 relative">
+<div class="flex flex-col gap-2">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-error-container text-on-error-container font-caption text-caption rounded font-label-sm">Critical</span>
+<span class="px-2 py-0.5 bg-primary/10 text-primary font-caption text-caption rounded">Impact: High</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant font-caption text-caption rounded">Effort: Med</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">#REC-104</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-medium">Ready for Sprint</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+                Implement Resilient 2G SQLite Offline Synchronization Queue
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Replace HTTP synchronous blocking calls with local SQLite mutations and exponential jittered retries to eliminate session timeouts on unstable cell towers.
+              </p>
+<div class="flex flex-wrap items-center justify-between gap-2 pt-1 font-caption text-caption text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary">person</span>
+                    Marcus Chen (Architecture)
+                  </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">public</span>
+                    Kenya & Nigeria
+                  </span>
+</div>
+<div class="flex items-center gap-1.5 text-primary font-label-sm">
+<span>Selected Blueprint</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 2: Compress All Asset Payloads to Under 12MB Initial APK Budget -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md cursor-pointer transition-all hover:bg-surface-container-low/40">
+<div class="flex flex-col gap-2">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed font-caption text-caption rounded font-label-sm">High</span>
+<span class="px-2 py-0.5 bg-primary/10 text-primary font-caption text-caption rounded">Impact: High</span>
+<span class="px-2 py-0.5 bg-secondary-container/50 text-secondary font-caption text-caption rounded font-label-sm">Effort: Low (Quick Win)</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">#REC-108</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">In Review</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+                Compress All Asset Payloads to Under 12MB Initial APK Budget
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Convert heavy raster illustrations to tinted vectors, apply Brotli compression, and defer localized audio packs until first Wi-Fi connection.
+              </p>
+<div class="flex flex-wrap items-center justify-between gap-2 pt-1 font-caption text-caption text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">person</span>
+                    Elena Rostova (Client Infra)
+                  </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">public</span>
+                    All Emerging Markets
+                  </span>
+</div>
+<span class="font-caption text-caption">Updated 2h ago</span>
+</div>
+</div>
+</div>
+<!-- Row 3: Introduce Vernacular Audio Micro-Prompts in Swahili & Hausa -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md cursor-pointer transition-all hover:bg-surface-container-low/40">
+<div class="flex flex-col gap-2">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-tertiary-fixed text-on-tertiary-fixed font-caption text-caption rounded font-label-sm">High</span>
+<span class="px-2 py-0.5 bg-primary/10 text-primary font-caption text-caption rounded">Impact: High</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant font-caption text-caption rounded">Effort: Med</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">#REC-112</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Backlog</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+                Introduce Vernacular Audio Micro-Prompts in Swahili & Hausa
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Provide one-tap low-bitrate acoustic verification prompts for merchants with limited formal textual literacy during high-value settlements.
+              </p>
+<div class="flex flex-wrap items-center justify-between gap-2 pt-1 font-caption text-caption text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">person</span>
+                    Amina Bello (Localization Lead)
+                  </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">public</span>
+                    East & West Africa
+                  </span>
+</div>
+<span class="font-caption text-caption">14 Interviews Linked</span>
+</div>
+</div>
+</div>
+<!-- Row 4: Enlarge Touch Targets for High-Glare Sunlight Usability -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md cursor-pointer transition-all hover:bg-surface-container-low/40">
+<div class="flex flex-col gap-2">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface-variant font-caption text-caption rounded font-label-sm">Medium</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant font-caption text-caption rounded">Impact: Med</span>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface-variant font-caption text-caption rounded">Effort: Low</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">#REC-095</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm">Merged</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+                Enlarge Touch Targets for High-Glare Sunlight Usability
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Increase minimal interactive hit target bounds from 44px to 56px with active high-contrast border state for field daylight operations.
+              </p>
+<div class="flex flex-wrap items-center justify-between gap-2 pt-1 font-caption text-caption text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">person</span>
+                    Rajesh Patel (Design System)
+                  </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">public</span>
+                    India & Indonesia
+                  </span>
+</div>
+<span class="font-caption text-caption text-secondary">Verified in Field v2.2</span>
+</div>
+</div>
+</div>
+<!-- Row 5: Add Instant SMS Confirmation Fallback for Failed WebSockets -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md cursor-pointer transition-all hover:bg-surface-container-low/40">
+<div class="flex flex-col gap-2">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-error-container text-on-error-container font-caption text-caption rounded font-label-sm">Critical</span>
+<span class="px-2 py-0.5 bg-primary/10 text-primary font-caption text-caption rounded">Impact: High</span>
+<span class="px-2 py-0.5 bg-secondary-container/50 text-secondary font-caption text-caption rounded font-label-sm">Effort: Low (Quick Win)</span>
+<span class="font-caption text-caption text-on-surface-variant font-mono">#REC-115</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-label-sm">Testing</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+                Add Instant SMS Confirmation Fallback for Failed WebSockets
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                When socket keepalive fails past 4000ms during checkout, trigger zero-rated outbound SMS receipts so stall owners never charge customers twice.
+              </p>
+<div class="flex flex-wrap items-center justify-between gap-2 pt-1 font-caption text-caption text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">person</span>
+                    Dr. Maya Vance (Lead UX)
+                  </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">public</span>
+                    Sub-Saharan Africa
+                  </span>
+</div>
+<span class="font-caption text-caption">In Sandbox Staging</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Panel (40% width = col-span-5 of 12): Deep Dive Recommendation Spec & Evidence Report -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col gap-space-md sticky top-20">
+<!-- Spec Inspector Header -->
+<div class="flex items-start justify-between pb-space-sm border-b border-surface-container">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-primary text-on-primary rounded font-caption text-caption font-mono">SPEC #REC-104</span>
+<span class="font-caption text-caption text-secondary flex items-center gap-1 font-label-sm">
+<span class="material-symbols-outlined text-sm">verified</span> Architect Approved
+              </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">
+              2G SQLite Offline Sync Queue
+            </h2>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container" title="Share Spec" type="button">
+<span class="material-symbols-outlined text-base">share</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container" title="More options" type="button">
+<span class="material-symbols-outlined text-base">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- Section 1: Evidence Origin -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption uppercase tracking-wider text-primary font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">travel_explore</span> Empirical Evidence Origin
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">42 Field Audits</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+            Derived directly from <span class="font-label-sm">42 field audits in Eldoret & Kisumu</span>. Analysis logged a <span class="text-error font-label-sm">32% transaction drop</span> during peak carrier cell-throttling between 17:00 and 19:30 local time.
+          </p>
+</div>
+<!-- Section 2: Business & Trust Rationale -->
+<div class="flex flex-col gap-1">
+<span class="font-caption text-caption uppercase tracking-wider text-on-surface-variant font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">monetization_on</span> Business & Trust Rationale
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Prevents customer panic and double-debit fraud concerns when cellular handshakes freeze mid-flow. Estimated to recover <span class="font-label-sm text-on-surface font-headline-sm text-secondary">$14,200/month</span> in abandoned high-velocity settlements.
+          </p>
+</div>
+<!-- Section 3: Technical Solution Blueprint & Architecture Schema -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption uppercase tracking-wider text-on-surface-variant font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">terminal</span> Architecture Schema & Storage Contract
+            </span>
+<span class="font-caption text-caption font-mono text-outline">v2.4-draft</span>
+</div>
+<div class="bg-on-background rounded-lg p-3 text-surface font-mono text-caption overflow-x-auto shadow-inner">
+<div class="text-primary-fixed-dim font-bold">// Offline Mutation Persistence Contract</div>
+<div class="text-surface-dim mt-1">CREATE TABLE tx_offline_queue (</div>
+<div class="pl-4 text-surface">uuid TEXT PRIMARY KEY NOT NULL,</div>
+<div class="pl-4 text-surface">idempotency_key TEXT UNIQUE NOT NULL,</div>
+<div class="pl-4 text-surface">payload BLOB,</div>
+<div class="pl-4 text-secondary-container">sync_state TEXT DEFAULT 'QUEUED',</div>
+<div class="pl-4 text-tertiary-fixed-dim">retry_count INTEGER DEFAULT 0,</div>
+<div class="pl-4 text-surface-dim">created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP</div>
+<div class="text-surface-dim">);</div>
+<div class="text-outline mt-2">// Worker dispatches on ConnectivityManager.NET_CAPABILITY_VALIDATED</div>
+</div>
+</div>
+<!-- Section 4: Acceptance Criteria Checklist -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption uppercase tracking-wider text-on-surface-variant font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">fact_check</span> Engineering Acceptance Criteria
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">3 of 4 Ready</span>
+</div>
+<div class="flex flex-col gap-2">
+<label class="flex items-start gap-2.5 cursor-pointer group">
+<input checked="" class="mt-0.5 rounded text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary transition-colors">
+                Transactions write to local SQLite within <18ms with zero main-thread blocking.
+              </span>
+</label>
+<label class="flex items-start gap-2.5 cursor-pointer group">
+<input checked="" class="mt-0.5 rounded text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary transition-colors">
+                Idempotency key header matches SHA256(merchant_id + timestamp + salt).
+              </span>
+</label>
+<label class="flex items-start gap-2.5 cursor-pointer group">
+<input checked="" class="mt-0.5 rounded text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary transition-colors">
+                Full UI optimistic UI confirmation display with clear offline badge indicator.
+              </span>
+</label>
+<label class="flex items-start gap-2.5 cursor-pointer group">
+<input class="mt-0.5 rounded text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary transition-colors">
+                Automatic graceful degradation on low storage (<50MB free internal disk space).
+              </span>
+</label>
+</div>
+</div>
+<!-- Section 5: Attached Evidence Artifacts -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">videocam</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Eldoret_Audit_Merchant#04.mp4</span>
+<span class="font-caption text-caption text-on-surface-variant">2m 14s • Network drop user friction capture</span>
+</div>
+</div>
+<button class="p-1 rounded text-primary hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-base">play_circle</span>
+</button>
+</div>
+<!-- Action Toolbar for Selected Spec -->
+<div class="pt-space-sm flex flex-col gap-2">
+<div class="grid grid-cols-2 gap-2">
+<button class="h-9 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm rounded-lg shadow-sm flex items-center justify-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-base">assignment_turned_in</span>
+<span>Assign to Sprint</span>
+</button>
+<button class="h-9 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded-lg shadow-sm flex items-center justify-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-base text-primary">send</span>
+<span>Export Jira Story</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-1 px-1 font-caption text-caption">
+<button class="hover:text-on-surface flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">attach_file</span> Attach Video Clip
+            </button>
+<button class="hover:text-on-surface flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">update</span> Update Status
+            </button>
+<button class="hover:text-error flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">archive</span> Archive
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="h-7 bg-surface-container-low px-gutter-desktop flex items-center justify-between text-on-surface-variant font-caption text-caption"><div class="flex items-center gap-3"><span class="flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>All systems operational</span><span>|</span><span>Inclusion Benchmark: v2.4 Active</span></div><div class="flex items-center gap-3"><span>Sync: Connected (42ms)</span><span>|</span><span>8 Target Markets Tracked</span></div></footer></div></body></html>

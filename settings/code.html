@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary":"#3525cd","error":"#ba1a1a","secondary-container":"#86f2e4","on-secondary-fixed-variant":"#005049","surface-container":"#e5eeff","outline-variant":"#c7c4d8","on-tertiary-fixed-variant":"#7b2f00","on-error":"#ffffff","on-tertiary-container":"#ffd2be","secondary-fixed-dim":"#6bd8cb","secondary":"#006a61","surface-dim":"#cbdbf5","surface-container-low":"#eff4ff","error-container":"#ffdad6","secondary-fixed":"#89f5e7","tertiary-fixed-dim":"#ffb695","outline":"#777587","surface-container-lowest":"#ffffff","tertiary-fixed":"#ffdbcc","on-error-container":"#93000a","on-background":"#0b1c30","primary-fixed":"#e2dfff","background":"#f8f9ff","on-secondary-fixed":"#00201d","on-tertiary-fixed":"#351000","inverse-surface":"#213145","on-primary-fixed-variant":"#3323cc","inverse-on-surface":"#eaf1ff","surface-tint":"#4d44e3","primary-fixed-dim":"#c3c0ff","inverse-primary":"#c3c0ff","on-secondary":"#ffffff","on-secondary-container":"#006f66","tertiary-container":"#a44100","on-primary":"#ffffff","surface-bright":"#f8f9ff","primary-container":"#4f46e5","on-surface-variant":"#464555","surface-container-high":"#dce9ff","surface-variant":"#d3e4fe","on-primary-fixed":"#0f0069","surface-container-highest":"#d3e4fe","tertiary":"#7e3000","on-tertiary":"#ffffff","on-primary-container":"#dad7ff","surface":"#f8f9ff","on-surface":"#0b1c30"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","gutter":"1rem","margin":"1rem","gutter-desktop":"1.5rem","space-lg":"1rem","space-xs":"0.25rem","space-md":"0.75rem","margin-desktop":"2rem","space-2xl":"2rem","space-xl":"1.5rem"},"fontFamily":{"body-md":["Inter"],"body-lg":["Inter"],"headline-sm":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"display":["Inter"],"caption":["Inter"],"body-sm":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"label-sm":["Inter"]},"fontSize":{"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-sm":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"headline-lg":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg-mobile":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"display":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"600"}],"caption":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.03em","fontWeight":"500"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"500"}],"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low/95 backdrop-blur-xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm overflow-hidden"><img alt="MarketMosaic Fluent Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VPjqs0T6k_5mKBmDrjs49MPYfEFUygTVZEbI4mmh_HK5xdsxsHLqX5BwgfVVef4GiOSCcR_Tq0XY1fQSL4NAPs6msUqTCLat3qs5kGoicwBH9Q9fy4Wwv4j7o4E2HUm7Xm9aOAD6re0-wFICkTr6gFHhG6KZpYjD0Tx_cmr_5qvd1v7zw0Fa1B_ztpJMCayy8HfZru1U6B8Qz-DGeTkXYkZsZW-X8VXjPjjUuA-cmYrdjQX4xnTAF0ePk"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate leading-tight">MarketMosaic</span><span class="font-caption text-caption text-on-surface-variant truncate">Emerging Markets UX</span></div></div><button class="p-1 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" title="Collapse navigation rail" type="button"><span class="material-symbols-outlined text-base">menu_open</span></button></div><nav class="flex flex-col gap-1 px-space-sm pt-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-md relative before:content-[''] before:absolute before:left-1 before:top-2 before:bottom-2 before:w-1 before:bg-surface-container-lowest before:rounded-full"><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="overview" href="../overview_dashboard/code.html"><span class="material-symbols-outlined text-lg">grid_view</span><span class="truncate">Overview</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="research-projects" href="../research_projects/code.html"><span class="material-symbols-outlined text-lg">folder_open</span><span class="truncate">Research Projects</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="persona-studio" href="../persona_studio/code.html"><span class="material-symbols-outlined text-lg">groups</span><span class="truncate">Persona Studio</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inclusion-audit" href="../inclusion_audit/code.html"><span class="material-symbols-outlined text-lg">verified_user</span><span class="truncate">Inclusion Audit</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="market-insights" href="../market_insights/code.html"><span class="material-symbols-outlined text-lg">public</span><span class="truncate">Market Insights</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="journey-mapping" href="../journey_mapping/code.html"><span class="material-symbols-outlined text-lg">alt_route</span><span class="truncate">Journey Mapping</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="recommendations-and-reports" href="../recommendations_and_reports/code.html"><span class="material-symbols-outlined text-lg">description</span><span class="truncate">Reports & Recommendations</span></a><a aria-current="page" class="group flex items-center gap-space-md px-space-md py-2 rounded-lg transition-all bg-primary-container text-on-primary font-label-md relative before:content-[''] before:absolute before:left-1 before:top-2 before:bottom-2 before:w-1 before:bg-surface-container-lowest before:rounded-full" data-path="settings" href="../settings/code.html"><span class="material-symbols-outlined text-lg">settings</span><span class="truncate">Settings</span></a></nav></div><div class="p-space-md m-space-sm bg-surface-container rounded-lg"><div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface mb-0.5"><span class="h-2 w-2 rounded-full bg-secondary"></span><span>Online</span><span class="text-on-surface-variant font-caption text-caption">• Nairobi</span></div><p class="font-caption text-caption text-on-surface-variant truncate">Regional Node: SSA-1</p></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><nav class="hidden sm:flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span class="hover:text-on-surface cursor-pointer">Enterprise Research</span><span class="material-symbols-outlined text-xs">chevron_right</span><span class="font-label-md text-label-md text-on-surface">Global Emerging Markets</span></nav><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-2.5 text-on-surface-variant text-base pointer-events-none">search</span><input class="w-64 lg:w-80 h-9 pl-9 pr-16 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-[0_1px_4px_rgba(0,0,0,0.04)]" placeholder="Search projects, personas, insights..." type="text"/><kbd class="absolute right-2 px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-caption text-caption rounded">Ctrl + F</kbd></div></div><div class="flex items-center gap-space-sm"><button class="h-9 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm rounded-lg flex items-center gap-1 shadow-sm transition-all" type="button"><span class="material-symbols-outlined text-base">add</span><span>New Project</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">notifications</span><span class="absolute top-1.5 right-1.5 h-4 min-w-[1rem] px-1 bg-error text-on-error rounded-full font-caption text-caption flex items-center justify-center leading-none">3</span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">help_outline</span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">dark_mode</span></button><div class="flex items-center gap-2 pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyMAU3Ey7BjPL9nzV2CCAiPPcHWMpFRxWLWr3qNjB4Y8Dot81ACeran64QgCtCnHNGiYZJmR7-kSAQjzdLqBk1ZntklMd3pPTMP4-gmNe04tLE7NyEpxOndQSaZ7HMrpnxdvQkUzpmhQn-4WYWZPH4kSNu54GtTDU8vHqA1kQNWQJdqO03OuzE5nt0UUWnild6M2-aIiZJ4IISVPd5SLCFZpRg-P_wdF3u4UCz5sWfmNG30j-CEIsT"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-secondary rounded-full ring-2 ring-surface"></span></div><span class="material-symbols-outlined text-sm text-on-surface-variant">expand_more</span></div></div></header><main class="flex-1 pt-16 bg-surface w-full pb-8"><div class="flex flex-col w-full">
+<!-- Command & Workspace Sticky Action Strip -->
+<div class="sticky top-16 z-30 bg-surface/90 backdrop-blur-md px-gutter-desktop py-space-sm mb-space-md shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">tune</span>
+<h1 class="font-headline-md text-headline-md text-on-surface truncate">Application Settings & Workspace Configuration</h1>
+<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm">Enterprise v2.4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Configure research parameters, regional sync nodes, accessibility preferences, and enterprise security.</p>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-center shrink-0">
+<div class="relative hidden xl:flex items-center">
+<span class="material-symbols-outlined absolute left-2.5 text-on-surface-variant text-base pointer-events-none">search</span>
+<input class="h-9 w-72 pl-9 pr-3 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="settingsQuickSearch" placeholder="Search settings, preferences, shortcuts..." type="text"/>
+</div>
+<button class="h-9 px-space-md bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded-lg shadow-sm transition-all flex items-center gap-1.5 active:scale-95" type="button">
+<span class="material-symbols-outlined text-base text-on-surface-variant">restart_alt</span>
+<span>Discard Changes</span>
+</button>
+<button class="h-9 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm rounded-lg shadow-sm transition-all flex items-center gap-1.5 active:scale-95" id="saveSettingsBtn" type="button">
+<span class="material-symbols-outlined text-base">save</span>
+<span>Save Preferences</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Primary Content Grid Layout -->
+<div class="px-gutter-desktop space-y-space-xl max-w-7xl mx-auto w-full pb-16">
+<!-- Group 1: Appearance & Display -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">palette</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Appearance & Display</h2>
+</div>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Fluent 2 Desktop Style</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-lg">
+<!-- Theme Selection Native Cards -->
+<div>
+<label class="font-label-md text-label-md text-on-surface block mb-space-sm">System Theme & Backdrop</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<!-- Light Tile (Selected) -->
+<button class="text-left p-space-md rounded-lg bg-surface-container-low transition-all relative overflow-hidden group shadow-sm focus:outline-none" type="button">
+<div class="absolute top-2 right-2 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<div class="h-20 w-full rounded-md bg-gradient-to-br from-surface to-surface-container-high p-2 flex flex-col justify-between mb-space-sm shadow-inner">
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="h-1.5 w-12 rounded bg-on-surface/20"></span>
+</div>
+<div class="h-6 w-full bg-surface-container-lowest rounded p-1 flex gap-1 items-center">
+<div class="w-3 h-3 rounded bg-secondary"></div>
+<div class="h-1 w-16 bg-on-surface/10 rounded"></div>
+</div>
+</div>
+<div class="font-label-md text-label-md text-on-surface">Light Mode</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">Recommended for high ambient daylight operations</p>
+</button>
+<!-- Dark Tile -->
+<button class="text-left p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-all relative overflow-hidden group shadow-sm focus:outline-none" type="button">
+<div class="h-20 w-full rounded-md bg-inverse-surface p-2 flex flex-col justify-between mb-space-sm">
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed"></span>
+<span class="h-1.5 w-12 rounded bg-surface-container-lowest/30"></span>
+</div>
+<div class="h-6 w-full bg-inverse-on-surface/10 rounded p-1 flex gap-1 items-center">
+<div class="w-3 h-3 rounded bg-secondary-fixed"></div>
+<div class="h-1 w-16 bg-surface-container-lowest/20 rounded"></div>
+</div>
+</div>
+<div class="font-label-md text-label-md text-on-surface">Dark Mode</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">Optimized for low-light lab environments</p>
+</button>
+<!-- Windows Default Tile -->
+<button class="text-left p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-all relative overflow-hidden group shadow-sm focus:outline-none" type="button">
+<div class="h-20 w-full rounded-md bg-gradient-to-r from-surface via-surface-container to-inverse-surface p-2 flex flex-col justify-between mb-space-sm">
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="h-1.5 w-12 rounded bg-on-surface/30"></span>
+</div>
+<div class="h-6 w-full bg-surface-container-lowest/80 rounded p-1 flex gap-1 items-center backdrop-blur-sm">
+<div class="w-3 h-3 rounded bg-secondary"></div>
+<div class="h-1 w-16 bg-on-surface/20 rounded"></div>
+</div>
+</div>
+<div class="font-label-md text-label-md text-on-surface">Windows System Default</div>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">Synchronize with active Windows 11 accent palette</p>
+</button>
+</div>
+</div>
+<!-- Fluent Acrylic & Mica transparency effects toggle -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col pr-space-md">
+<span class="font-label-md text-label-md text-on-surface">Fluent Acrylic & Mica Transparency Effects</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Renders layered blur materials across persistent side rails and modal surfaces.</span>
+</div>
+<!-- Toggle Switch (Checked) -->
+<button aria-checked="true" class="w-11 h-6 bg-primary rounded-full relative p-0.5 transition-colors shrink-0" role="switch" type="button">
+<span class="block w-5 h-5 bg-on-primary rounded-full shadow-md translate-x-5 transition-transform"></span>
+</button>
+</div>
+<!-- Accent Color Selector -->
+<div class="pt-space-xs">
+<div class="flex items-center justify-between mb-space-sm">
+<label class="font-label-md text-label-md text-on-surface">Application Accent Tone</label>
+<span class="font-caption text-caption text-on-surface-variant">Indigo #4F46E5 Active</span>
+</div>
+<div class="flex items-center gap-space-md">
+<!-- Indigo (Selected) -->
+<button class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm hover:scale-105 transition-transform" title="Indigo (System Default)" type="button">
+<span class="material-symbols-outlined text-base">check</span>
+</button>
+<!-- Teal -->
+<button class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-sm hover:scale-105 transition-transform" title="Teal Coastal" type="button"></button>
+<!-- Blue -->
+<button class="w-10 h-10 rounded-full bg-surface-tint flex items-center justify-center text-on-primary shadow-sm hover:scale-105 transition-transform" title="Deep Horizon Blue" type="button"></button>
+<!-- Purple -->
+<button class="w-10 h-10 rounded-full bg-primary-fixed-dim flex items-center justify-center text-on-primary-fixed shadow-sm hover:scale-105 transition-transform" title="Orchid Accent" type="button"></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Group 2: Accessibility & Usability -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-lg">accessibility_new</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Accessibility & Usability</h2>
+</div>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">WCAG 2.2 Compliant</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-lg">
+<!-- Text Scaling Slider -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface">Workspace Typography Scaling</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Adjust relative scaling factor for all observational field transcripts.</p>
+</div>
+<span class="font-label-md text-label-md text-primary bg-primary/10 px-2.5 py-0.5 rounded-full">100% (Standard)</span>
+</div>
+<div class="pt-2">
+<div class="relative w-full flex items-center">
+<input class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-primary" max="150" min="100" step="25" type="range" value="100"/>
+</div>
+<div class="flex justify-between font-caption text-caption text-on-surface-variant mt-1.5 px-0.5">
+<span>100% Standard</span>
+<span>125% Field Friendly</span>
+<span>150% High Legibility</span>
+</div>
+</div>
+</div>
+<!-- High Contrast Mode Toggle -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col pr-space-md">
+<span class="font-label-md text-label-md text-on-surface">High Contrast Mode (Field Sunlight Glare)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Maximizes surface contrast ratios to 7:1 for researchers operating handheld tablets under direct sun.</span>
+</div>
+<!-- Toggle (Off) -->
+<button aria-checked="false" class="w-11 h-6 bg-surface-container rounded-full relative p-0.5 transition-colors shrink-0" role="switch" type="button">
+<span class="block w-5 h-5 bg-surface-container-lowest rounded-full shadow-md translate-x-0 transition-transform"></span>
+</button>
+</div>
+<!-- Reduced Motion Toggle -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col pr-space-md">
+<span class="font-label-md text-label-md text-on-surface">Reduced Motion Preference</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Inherits the 'prefers-reduced-motion' trigger from host Windows OS to disable card transforms.</span>
+</div>
+<!-- Toggle (Active) -->
+<button aria-checked="true" class="w-11 h-6 bg-primary rounded-full relative p-0.5 transition-colors shrink-0" role="switch" type="button">
+<span class="block w-5 h-5 bg-on-primary rounded-full shadow-md translate-x-5 transition-transform"></span>
+</button>
+</div>
+<!-- Keyboard Focus Rings Status -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col pr-space-md">
+<span class="font-label-md text-label-md text-on-surface">Focus Rings & Full Keyboard Navigation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Visible 2px primary outlines for strict keyboard parity on data tables and filter pills.</span>
+</div>
+<span class="px-3 py-1 rounded-md bg-secondary/15 text-secondary font-label-sm text-label-sm flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-sm">visibility</span>
+<span>Always Visible</span>
+</span>
+</div>
+</div>
+</section>
+<!-- Group 3: Field Telemetry & Offline Data Sync -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">cell_tower</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Field Telemetry & Offline Data Sync</h2>
+</div>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Resilient Mesh Network</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-lg">
+<!-- Node Selection & Ping Telemetry -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Active Regional Edge Node</label>
+<span class="font-caption text-caption text-on-surface-variant">Auto-routed via Anycast Routing</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- SSA-1 Nairobi (Selected) -->
+<div class="p-space-md rounded-lg bg-surface-container-low transition-all relative shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">SSA-1 (Nairobi Hub)</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Sub-Saharan Africa primary cluster</p>
+<div class="mt-space-sm flex items-center justify-between font-caption text-caption">
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">wifi</span> 42ms ping
+                </span>
+<span class="px-1.5 py-0.5 rounded bg-primary text-on-primary text-[10px] font-medium">PRIMARY</span>
+</div>
+</div>
+<!-- SAS-2 Mumbai -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-all relative shadow-sm cursor-pointer group">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md text-on-surface">SAS-2 (Mumbai)</span>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">South Asia secondary fallback</p>
+<div class="mt-space-sm flex items-center justify-between font-caption text-caption">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">network_check</span> 118ms ping
+                </span>
+<span class="text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">Select Node</span>
+</div>
+</div>
+<!-- SEA-4 Jakarta / Singapore -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-all relative shadow-sm cursor-pointer group">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md text-on-surface">SEA-4 (Jakarta / Singapore)</span>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Southeast Asia island cluster</p>
+<div class="mt-space-sm flex items-center justify-between font-caption text-caption">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">network_check</span> 154ms ping
+                </span>
+<span class="text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">Select Node</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Offline Cache Quota & Auto Sync -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg pt-space-xs">
+<div class="space-y-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Offline Cache Quota Allocation</label>
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<div class="flex items-center justify-between font-body-sm text-body-sm mb-2">
+<span class="text-on-surface font-medium">Allocate up to 2.5GB</span>
+<span class="text-on-surface-variant font-caption text-caption">1.12 GB Used (44%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 44%"></div>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-2">Reserved for encrypted local field audio recordings, photo surveys, and low-connectivity session logs.</p>
+</div>
+</div>
+<div class="space-y-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Auto-sync Frequency (Cellular 3G/4G/5G)</label>
+<div class="relative">
+<select class="w-full h-11 px-space-md bg-surface-container-low rounded-lg text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer">
+<option selected="">Instant sync with background compression (Low-bandwidth optimized)</option>
+<option>Batch sync every 15 minutes</option>
+<option>Manual Wi-Fi-only sync (Conserve cellular roaming quotas)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 pointer-events-none text-on-surface-variant text-base">expand_more</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-1.5">Leverages Brotli compression and delta encoding to minimize payload sizes over 2G/3G connections.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Group 4: Default Market & Language Standards -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-tertiary-fixed-dim/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-lg">public</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Default Market & Language Standards</h2>
+</div>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Global Localization Core</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Research Market -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Default Research Market Scope</label>
+<div class="relative">
+<select class="w-full h-10 px-3 bg-surface-container-low rounded-lg text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer">
+<option selected="">Global Emerging Markets (SSA, SAS, SEA)</option>
+<option>East Africa Tier-1 (Kenya, Rwanda, Uganda)</option>
+<option>South Asian High-Growth (India, Bangladesh)</option>
+<option>LATAM Northern Andes (Colombia, Peru)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 pointer-events-none text-on-surface-variant text-base">expand_more</span>
+</div>
+</div>
+<!-- Inclusivity Benchmark -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Default Accessibility Benchmark</label>
+<div class="relative">
+<select class="w-full h-10 px-3 bg-surface-container-low rounded-lg text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer">
+<option selected="">WCAG 2.2 AA + Inclusivity Standard v2.4</option>
+<option>WCAG 2.2 AAA Strict Enterprise</option>
+<option>ISO 9241-11 Usability in Practice</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 pointer-events-none text-on-surface-variant text-base">expand_more</span>
+</div>
+</div>
+<!-- Currency & Dual Units -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Currency & Purchasing Power Display</label>
+<div class="relative">
+<select class="w-full h-10 px-3 bg-surface-container-low rounded-lg text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer">
+<option selected="">USD ($) with local market dual-display</option>
+<option>Local Primary Currency (KES, INR, IDR, NGN)</option>
+<option>EUR (€) Base Currency</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 pointer-events-none text-on-surface-variant text-base">expand_more</span>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary">translate</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface">Auto-detect Vernacular Dialects in Field Voice Notes</span>
+<p class="font-caption text-caption text-on-surface-variant">Transcribes Sheng, Hinglish, Taglish, and Pidgin speech via multi-lingual speech models.</p>
+</div>
+</div>
+<button aria-checked="true" class="w-11 h-6 bg-primary rounded-full relative p-0.5 transition-colors shrink-0" role="switch" type="button">
+<span class="block w-5 h-5 bg-on-primary rounded-full shadow-md translate-x-5 transition-transform"></span>
+</button>
+</div>
+</div>
+</section>
+<!-- Group 5: Account, Security & Privacy -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-lg">shield_person</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Account, Security & Privacy</h2>
+</div>
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider font-semibold">Strict Enterprise Vault</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-lg">
+<!-- Account Card with Provided Profile Image -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-lg bg-surface-container-low gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<img alt="Dr. Maya Vance Profile" class="w-16 h-16 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyMAU3Ey7BjPL9nzV2CCAiPPcHWMpFRxWLWr3qNjB4Y8Dot81ACeran64QgCtCnHNGiYZJmR7-kSAQjzdLqBk1ZntklMd3pPTMP4-gmNe04tLE7NyEpxOndQSaZ7HMrpnxdvQkUzpmhQn-4WYWZPH4kSNu54GtTDU8vHqA1kQNWQJdqO03OuzE5nt0UUWnild6M2-aIiZJ4IISVPd5SLCFZpRg-P_wdF3u4UCz5sWfmNG30j-CEIsT"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 bg-secondary rounded-full ring-2 ring-surface-container-lowest flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-on-secondary">verified</span>
+</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Dr. Maya Vance</h3>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-caption text-caption font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">verified</span>
+                  Enterprise Verified
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lead UX Research Scientist - Staff UX Lead</p>
+<p class="font-caption text-caption text-outline mt-0.5">Corporate Identity: maya.vance@marketmosaic.enterprise</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="h-9 px-space-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm rounded-lg shadow-sm hover:bg-surface-container transition-all" type="button">
+              Manage SSO
+            </button>
+<button class="h-9 px-space-md bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded-lg shadow-sm hover:bg-surface-dim transition-all" type="button">
+              Sign Out
+            </button>
+</div>
+</div>
+<!-- 2FA & Privacy Settings -->
+<div class="space-y-space-md pt-space-xs">
+<!-- Hardware Key 2FA -->
+<div class="flex items-center justify-between">
+<div class="flex items-start gap-space-sm pr-space-md">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5">key</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface">Two-Factor Hardware Authentication</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">FIDO2 / Hardware Security Key Active (YubiKey 5C NFC paired).</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold shrink-0">
+              Active & Enforced
+            </span>
+</div>
+<!-- PII Auto-Anonymization Scrubbing -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-start gap-space-sm pr-space-md">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5">blur_on</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface">Data Anonymization for Research Participants</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Strict PII Scrubbing Enabled (Auto-blurs mobile phone numbers, national IDs, and face landmarks in recorded field media prior to multi-regional sync).</p>
+</div>
+</div>
+<!-- Toggle (Active) -->
+<button aria-checked="true" class="w-11 h-6 bg-primary rounded-full relative p-0.5 transition-colors shrink-0" role="switch" type="button">
+<span class="block w-5 h-5 bg-on-primary rounded-full shadow-md translate-x-5 transition-transform"></span>
+</button>
+</div>
+<!-- Device Session Log -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-start gap-space-sm pr-space-md">
+<span class="material-symbols-outlined text-on-surface-variant text-xl mt-0.5">devices</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface">Registered Workstation</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Microsoft Surface Pro 9 (Windows 11 Enterprise 23H2) • Hardware ID: SSA-WKST-0881</p>
+</div>
+</div>
+<button class="text-error font-label-sm text-label-sm hover:underline shrink-0" type="button">
+              Revoke Node Access
+            </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Bottom-Right Windows 11 Fluent Toast Notification Preview -->
+<div class="fixed bottom-10 right-6 z-50 transition-all duration-300 transform translate-y-0 opacity-100 max-w-sm" id="settingsToast">
+<div class="bg-surface-container-lowest/95 backdrop-blur-xl p-space-md rounded-xl shadow-xl flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary/15 text-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-base">cloud_done</span>
+</div>
+<div class="flex-1 min-w-0 pr-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Settings Saved Successfully</h4>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5">Regional node synchronized with Nairobi (SSA-1). Mesh quota re-allocated to 2.5GB.</p>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded-md transition-colors" onclick="document.getElementById('settingsToast').classList.add('opacity-0', 'translate-y-4')" type="button">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+</div>
+<script>
+    (function() {
+      const saveBtn = document.getElementById('saveSettingsBtn');
+      const toast = document.getElementById('settingsToast');
+
+      if (saveBtn && toast) {
+        saveBtn.addEventListener('click', function() {
+          toast.classList.remove('opacity-0', 'translate-y-4');
+          toast.classList.add('opacity-100', 'translate-y-0');
+
+          setTimeout(() => {
+            toast.classList.add('opacity-0', 'translate-y-4');
+          }, 4500);
+        });
+      }
+
+      // Quick settings filter interaction
+      const searchInput = document.getElementById('settingsQuickSearch');
+      if (searchInput) {
+        searchInput.addEventListener('input', function(e) {
+          const val = e.target.value.toLowerCase();
+          const sections = document.querySelectorAll('section');
+          sections.forEach(sec => {
+            const text = sec.innerText.toLowerCase();
+            if (text.includes(val)) {
+              sec.style.display = '';
+            } else {
+              sec.style.display = 'none';
+            }
+          });
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="h-7 bg-surface-container-low px-gutter-desktop flex items-center justify-between text-on-surface-variant font-caption text-caption"><div class="flex items-center gap-3"><span class="flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>All systems operational</span><span>|</span><span>Inclusion Benchmark: v2.4 Active</span></div><div class="flex items-center gap-3"><span>Sync: Connected (42ms)</span><span>|</span><span>8 Target Markets Tracked</span></div></footer></div></body></html>

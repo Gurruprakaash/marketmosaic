@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary":"#3525cd","error":"#ba1a1a","secondary-container":"#86f2e4","on-secondary-fixed-variant":"#005049","surface-container":"#e5eeff","outline-variant":"#c7c4d8","on-tertiary-fixed-variant":"#7b2f00","on-error":"#ffffff","on-tertiary-container":"#ffd2be","secondary-fixed-dim":"#6bd8cb","secondary":"#006a61","surface-dim":"#cbdbf5","surface-container-low":"#eff4ff","error-container":"#ffdad6","secondary-fixed":"#89f5e7","tertiary-fixed-dim":"#ffb695","outline":"#777587","surface-container-lowest":"#ffffff","tertiary-fixed":"#ffdbcc","on-error-container":"#93000a","on-background":"#0b1c30","primary-fixed":"#e2dfff","background":"#f8f9ff","on-secondary-fixed":"#00201d","on-tertiary-fixed":"#351000","inverse-surface":"#213145","on-primary-fixed-variant":"#3323cc","inverse-on-surface":"#eaf1ff","surface-tint":"#4d44e3","primary-fixed-dim":"#c3c0ff","inverse-primary":"#c3c0ff","on-secondary":"#ffffff","on-secondary-container":"#006f66","tertiary-container":"#a44100","on-primary":"#ffffff","surface-bright":"#f8f9ff","primary-container":"#4f46e5","on-surface-variant":"#464555","surface-container-high":"#dce9ff","surface-variant":"#d3e4fe","on-primary-fixed":"#0f0069","surface-container-highest":"#d3e4fe","tertiary":"#7e3000","on-tertiary":"#ffffff","on-primary-container":"#dad7ff","surface":"#f8f9ff","on-surface":"#0b1c30"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","gutter":"1rem","margin":"1rem","gutter-desktop":"1.5rem","space-lg":"1rem","space-xs":"0.25rem","space-md":"0.75rem","margin-desktop":"2rem","space-2xl":"2rem","space-xl":"1.5rem"},"fontFamily":{"body-md":["Inter"],"body-lg":["Inter"],"headline-sm":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"display":["Inter"],"caption":["Inter"],"body-sm":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"label-sm":["Inter"]},"fontSize":{"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-sm":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"600"}],"headline-lg":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg-mobile":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"display":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"600"}],"caption":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.03em","fontWeight":"500"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"500"}],"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low/95 backdrop-blur-xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm overflow-hidden"><img alt="MarketMosaic Fluent Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VPjqs0T6k_5mKBmDrjs49MPYfEFUygTVZEbI4mmh_HK5xdsxsHLqX5BwgfVVef4GiOSCcR_Tq0XY1fQSL4NAPs6msUqTCLat3qs5kGoicwBH9Q9fy4Wwv4j7o4E2HUm7Xm9aOAD6re0-wFICkTr6gFHhG6KZpYjD0Tx_cmr_5qvd1v7zw0Fa1B_ztpJMCayy8HfZru1U6B8Qz-DGeTkXYkZsZW-X8VXjPjjUuA-cmYrdjQX4xnTAF0ePk"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate leading-tight">MarketMosaic</span><span class="font-caption text-caption text-on-surface-variant truncate">Emerging Markets UX</span></div></div><button class="p-1 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" title="Collapse navigation rail" type="button"><span class="material-symbols-outlined text-base">menu_open</span></button></div><nav class="flex flex-col gap-1 px-space-sm pt-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-md relative before:content-[''] before:absolute before:left-1 before:top-2 before:bottom-2 before:w-1 before:bg-surface-container-lowest before:rounded-full"><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="overview" href="../overview_dashboard/code.html"><span class="material-symbols-outlined text-lg">grid_view</span><span class="truncate">Overview</span></a><a aria-current="page" class="group flex items-center gap-space-md px-space-md py-2 rounded-lg transition-all bg-primary-container text-on-primary font-label-md relative before:content-[''] before:absolute before:left-1 before:top-2 before:bottom-2 before:w-1 before:bg-surface-container-lowest before:rounded-full" data-path="research-projects" href="../research_projects/code.html"><span class="material-symbols-outlined text-lg">folder_open</span><span class="truncate">Research Projects</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="persona-studio" href="../persona_studio/code.html"><span class="material-symbols-outlined text-lg">groups</span><span class="truncate">Persona Studio</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inclusion-audit" href="../inclusion_audit/code.html"><span class="material-symbols-outlined text-lg">verified_user</span><span class="truncate">Inclusion Audit</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="market-insights" href="../market_insights/code.html"><span class="material-symbols-outlined text-lg">public</span><span class="truncate">Market Insights</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="journey-mapping" href="../journey_mapping/code.html"><span class="material-symbols-outlined text-lg">alt_route</span><span class="truncate">Journey Mapping</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="recommendations-and-reports" href="../recommendations_and_reports/code.html"><span class="material-symbols-outlined text-lg">description</span><span class="truncate">Reports & Recommendations</span></a><a class="group flex items-center gap-space-md px-space-md py-2 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="../settings/code.html"><span class="material-symbols-outlined text-lg">settings</span><span class="truncate">Settings</span></a></nav></div><div class="p-space-md m-space-sm bg-surface-container rounded-lg"><div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface mb-0.5"><span class="h-2 w-2 rounded-full bg-secondary"></span><span>Online</span><span class="text-on-surface-variant font-caption text-caption">• Nairobi</span></div><p class="font-caption text-caption text-on-surface-variant truncate">Regional Node: SSA-1</p></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><nav class="hidden sm:flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span class="hover:text-on-surface cursor-pointer">Enterprise Research</span><span class="material-symbols-outlined text-xs">chevron_right</span><span class="font-label-md text-label-md text-on-surface">Global Emerging Markets</span></nav><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-2.5 text-on-surface-variant text-base pointer-events-none">search</span><input class="w-64 lg:w-80 h-9 pl-9 pr-16 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-[0_1px_4px_rgba(0,0,0,0.04)]" placeholder="Search projects, personas, insights..." type="text"/><kbd class="absolute right-2 px-1.5 py-0.5 bg-surface-container text-on-surface-variant font-caption text-caption rounded">Ctrl + F</kbd></div></div><div class="flex items-center gap-space-sm"><button class="h-9 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm rounded-lg flex items-center gap-1 shadow-sm transition-all" type="button"><span class="material-symbols-outlined text-base">add</span><span>New Project</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">notifications</span><span class="absolute top-1.5 right-1.5 h-4 min-w-[1rem] px-1 bg-error text-on-error rounded-full font-caption text-caption flex items-center justify-center leading-none">3</span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">help_outline</span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-lg">dark_mode</span></button><div class="flex items-center gap-2 pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyMAU3Ey7BjPL9nzV2CCAiPPcHWMpFRxWLWr3qNjB4Y8Dot81ACeran64QgCtCnHNGiYZJmR7-kSAQjzdLqBk1ZntklMd3pPTMP4-gmNe04tLE7NyEpxOndQSaZ7HMrpnxdvQkUzpmhQn-4WYWZPH4kSNu54GtTDU8vHqA1kQNWQJdqO03OuzE5nt0UUWnild6M2-aIiZJ4IISVPd5SLCFZpRg-P_wdF3u4UCz5sWfmNG30j-CEIsT"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-secondary rounded-full ring-2 ring-surface"></span></div><span class="material-symbols-outlined text-sm text-on-surface-variant">expand_more</span></div></div></header><main class="flex-1 pt-16 bg-surface w-full pb-8"><div class="flex flex-col w-full">
+<!-- Command Toolbar & Page Summary -->
+<section class="px-gutter-desktop pt-space-lg pb-space-md">
+<div class="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs font-caption text-caption text-on-surface-variant uppercase tracking-wider mb-1">
+<span>Enterprise UX Lab</span>
+<span>/</span>
+<span>Fieldwork Operations</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary ml-1"></span>
+<span class="text-secondary font-label-sm text-label-sm">Live Cohorts Active</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Research Studies & Field Cohorts</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Manage active multi-country field research, usability studies, and ethnographic logs.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="h-9 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-2 shadow-sm transition-all duration-150 active:scale-95" id="exportCsvBtn" type="button">
+<span class="material-symbols-outlined text-lg text-on-surface-variant">file_download</span>
+<span>Export CSV</span>
+</button>
+<button class="h-9 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-2 shadow-sm transition-all duration-150 active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg text-on-surface-variant">upload_file</span>
+<span>Import Dataset</span>
+</button>
+<button class="h-9 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded-lg flex items-center gap-1.5 shadow-md shadow-primary/20 transition-all duration-150 active:scale-95" id="openModalBtn" type="button">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>Create Project</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Filter & View Controls -->
+<section class="px-gutter-desktop pb-space-lg">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[260px] max-w-lg">
+<span class="material-symbols-outlined absolute left-3 top-2 text-on-surface-variant text-lg pointer-events-none">filter_list</span>
+<input class="w-full h-9 pl-9 pr-8 bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="searchInput" placeholder="Filter studies by title, country, researcher..." type="text"/>
+<button class="hidden absolute right-2.5 top-2 text-on-surface-variant hover:text-on-surface" id="clearSearch" type="button">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+<!-- Filters & Stage Pills -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<!-- Target Market -->
+<div class="relative">
+<select class="h-9 pl-3 pr-7 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-lg appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary" id="marketFilter">
+<option value="all">Market: All Regions</option>
+<option value="kenya">Kenya</option>
+<option value="india">India</option>
+<option value="indonesia">Indonesia</option>
+<option value="nigeria">Nigeria</option>
+<option value="philippines">Philippines</option>
+<option value="latin-america">Colombia / Peru</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-xs text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Research Stage -->
+<div class="relative">
+<select class="h-9 pl-3 pr-7 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-lg appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary" id="stageFilter">
+<option value="all">Stage: All Phases</option>
+<option value="discovery">Discovery</option>
+<option value="fieldwork">Fieldwork</option>
+<option value="synthesis">Synthesis</option>
+<option value="review">Final Review</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-xs text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Severity Alert Filter -->
+<div class="relative">
+<select class="h-9 pl-3 pr-7 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-lg appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary">
+<option>Alerts: All</option>
+<option>Critical Friction Only</option>
+<option>Healthy Flow</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-xs text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Owner Filter -->
+<div class="relative">
+<select class="h-9 pl-3 pr-7 bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-lg appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary">
+<option>Owner: All Leads</option>
+<option>Dr. Maya Vance</option>
+<option>Rajesh Patel</option>
+<option>Siti Nurhaliza</option>
+<option>Chidi Okonjo</option>
+<option>Maria Santos</option>
+<option>Carlos Mendez</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-xs text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Grid/List Switch -->
+<div class="ml-auto flex items-center bg-surface-container-low p-0.5 rounded-lg">
+<button class="h-8 w-8 rounded-lg bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center" id="viewGridBtn" title="Grid View" type="button">
+<span class="material-symbols-outlined text-base">grid_view</span>
+</button>
+<button class="h-8 w-8 rounded-lg text-on-surface-variant hover:text-on-surface flex items-center justify-center" id="viewListBtn" title="List View" type="button">
+<span class="material-symbols-outlined text-base">table_rows</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- High-Density Analytical Metric Strip -->
+<section class="px-gutter-desktop mb-space-lg">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-on-surface-variant uppercase">Tracked Field Participants</span>
+<p class="font-headline-md text-headline-md text-on-surface font-semibold mt-0.5">910</p>
+<span class="font-caption text-caption text-secondary flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-xs">trending_up</span>+18% vs last cycle
+          </span>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl">record_voice_over</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-on-surface-variant uppercase">Global Inclusion Average</span>
+<p class="font-headline-md text-headline-md text-on-surface font-semibold mt-0.5">80.3<span class="text-on-surface-variant font-caption text-caption">/100</span></p>
+<span class="font-caption text-caption text-secondary flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-xs">verified</span>Stable High
+          </span>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">balance</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-on-surface-variant uppercase">Connectivity Profiles</span>
+<p class="font-headline-md text-headline-md text-on-surface font-semibold mt-0.5">6 Modes</p>
+<span class="font-caption text-caption text-on-surface-variant mt-0.5 block">2G, 3G, Android Go, IVR</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">cell_tower</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-on-surface-variant uppercase">Critical Field Blockers</span>
+<p class="font-headline-md text-headline-md text-error font-semibold mt-0.5">4 Active</p>
+<span class="font-caption text-caption text-error flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-xs">warning</span>USSD Latency Spike
+          </span>
+</div>
+<div class="w-10 h-10 rounded-full bg-error-container/60 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-xl">report_problem</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Research Projects Cards Grid (3 Columns) -->
+<section class="px-gutter-desktop mb-space-2xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="projectsGrid">
+<!-- CARD 1: Mobile Banking App — Kenya (Features Active Context Menu Trigger) -->
+<article class="group bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between relative" data-market="kenya" data-stage="fieldwork">
+<div>
+<!-- Card Header & Context Menu Anchor -->
+<div class="flex items-start justify-between gap-space-sm mb-space-sm relative">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed text-primary font-medium">Usability Testing</span>
+<span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>
+<span class="font-caption text-caption text-on-surface-variant">SSA-NBO-01</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Mobile Banking App — Kenya</h2>
+</div>
+<!-- Context Menu Button -->
+<div class="relative">
+<button aria-expanded="true" aria-haspopup="true" class="h-8 w-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center transition-colors" id="menuTriggerBtn1" type="button">
+<span class="material-symbols-outlined text-lg">more_horiz</span>
+</button>
+<!-- ACTIVE CONTEXT MENU DEMO -->
+<div class="absolute right-0 top-9 w-52 bg-surface-container-lowest/95 backdrop-blur-md rounded-xl shadow-xl z-30 p-1.5 flex flex-col gap-0.5" id="contextDropdown1">
+<button class="w-full px-space-sm py-1.5 rounded-lg text-left font-body-sm text-body-sm text-on-surface hover:bg-surface-container flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-base text-primary">visibility</span>
+<span>View Details</span>
+</button>
+<button class="w-full px-space-sm py-1.5 rounded-lg text-left font-body-sm text-body-sm text-on-surface hover:bg-surface-container flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-base text-on-surface-variant">edit</span>
+<span>Edit Study</span>
+</button>
+<button class="w-full px-space-sm py-1.5 rounded-lg text-left font-body-sm text-body-sm text-on-surface hover:bg-surface-container flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-base text-on-surface-variant">content_copy</span>
+<span>Duplicate Protocol</span>
+</button>
+<button class="w-full px-space-sm py-1.5 rounded-lg text-left font-body-sm text-body-sm text-on-surface hover:bg-surface-container flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-base text-on-surface-variant">archive</span>
+<span>Archive</span>
+</button>
+<div class="h-px bg-surface-container-high my-1"></div>
+<button class="w-full px-space-sm py-1.5 rounded-lg text-left font-body-sm text-body-sm text-secondary hover:bg-secondary-container/30 flex items-center gap-space-xs transition-colors font-medium" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Export Report</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Market & Hardware Badge -->
+<div class="flex items-center gap-1.5 font-caption text-caption text-on-surface-variant mb-space-md">
+<span class="material-symbols-outlined text-sm text-secondary">location_on</span>
+<span>Nairobi & Kisumu</span>
+<span>•</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-on-surface">2G/4G hybrid</span>
+</div>
+<!-- Description -->
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">Testing offline transaction caching and USSD fallback for tier-3 retail merchants.</p>
+<!-- Field Artifact Thumbnail Strip -->
+<div class="mb-space-md rounded-lg overflow-hidden relative h-28 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A busy open-air retail market in Nairobi Kenya, showing a local merchant operating a compact mobile payment POS terminal under natural morning daylight, documentary realism style with warm golden ambient light and sharp focus on fingers tapping keypad" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFWJRCCmexsYy-WBN-zhFtpTzBgQwDMW-2P4rL2sNkTbGcySPqGeWxzgHEjfjInS9aOQUrJRI6JawoGxAgmQ_58-YPAJLCcaWGOL5WWbBDlalc_UQXOgaHKJucfoGVKmkkzwXcCbFmXUl3Qlq5sP7u3NZ97UKtpZcAWVVuGl_Bzv7xWeVB055nrceQqZjImq0KWjoz_Nkaocrvke_YHqIMAay_7GvPGp5WwqziAhQOuAfCq1vWP_iA"/>
+<div class="absolute bottom-2 left-2 bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface px-2 py-0.5 rounded font-caption text-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary-fixed">videocam</span>
+<span>12 Usability Clips</span>
+</div>
+</div>
+<!-- Core Metrics Grid -->
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-space-sm rounded-lg mb-space-md">
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Cohort</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">120 Users</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Completion</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">94.2%</span>
+</div>
+<div>
+<span class="font-caption text-caption text-error block">Friction</span>
+<span class="font-label-md text-label-md text-error font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">error</span>4 Alerts
+              </span>
+</div>
+</div>
+<!-- Inclusion Score Progress Bar -->
+<div class="mb-space-md">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">diversity_3</span>
+                Inclusion Score
+              </span>
+<span class="font-label-md text-label-md text-primary font-bold">84<span class="text-on-surface-variant font-caption text-caption font-normal">/100</span></span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 84%;"></div>
+</div>
+</div>
+</div>
+<!-- Card Footer -->
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-caption text-caption bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-space-sm rounded-b-xl">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-primary text-on-primary font-caption text-caption flex items-center justify-center font-bold">MV</div>
+<span class="text-on-surface font-medium truncate max-w-[110px]">Dr. Maya Vance</span>
+</div>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">schedule</span>
+            2 hours ago
+          </span>
+</div>
+</article>
+<!-- CARD 2: Healthcare Portal — India -->
+<article class="group bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between" data-market="india" data-stage="fieldwork">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-tertiary font-medium">Fieldwork Phase</span>
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+<span class="font-caption text-caption text-on-surface-variant">SAS-IN-04</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Healthcare Portal — India</h2>
+</div>
+<button class="h-8 w-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_horiz</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 font-caption text-caption text-on-surface-variant mb-space-md">
+<span class="material-symbols-outlined text-sm text-secondary">location_on</span>
+<span>Bihar & Uttar Pradesh</span>
+<span>•</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-on-surface">Feature phones + Android Go</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">Evaluating voice-assisted prescription lookup for rural community health workers (ASHAs).</p>
+<div class="mb-space-md rounded-lg overflow-hidden relative h-28 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Rural community healthcare worker in Uttar Pradesh India showing medicine packaging to an elderly patient while using a ruggedized smartphone device, vibrant sari textiles, soft ambient courtyard lighting, high documentary detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaxVqSr-DOe2Sv5OSH9dqkpZ1ea4RIo-594ZdnRQ65N3W7s3ZCUr20YGgnKvGglv5ZjJCR6N3S81ObAJNhOIPMOEvZXQ_j51SjHmGJ_bUdztS8kamMIds7zAuaSxDOqbrSMGrQwe4NLGho6m0Vi5ANGm5HSyB7K-9dwr0uCKcnENJIXk6Hb1IjO_1zXb9Z3_B5qR2zFB5EBav-LBHFV7BMWDmCqSmYllvzWLKJ7L6lYnwzocq6HNs8"/>
+<div class="absolute bottom-2 left-2 bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface px-2 py-0.5 rounded font-caption text-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary-fixed">mic</span>
+<span>Vernacular Hindi/Bhojpuri</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-space-sm rounded-lg mb-space-md">
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Cohort</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">85 ASHAs</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Completion</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">68%</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Input Mode</span>
+<span class="font-label-md text-label-md text-tertiary font-semibold truncate">Voice IVR</span>
+</div>
+</div>
+<div class="mb-space-md">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-tertiary">diversity_3</span>
+                Inclusion Score
+              </span>
+<span class="font-label-md text-label-md text-tertiary font-bold">71<span class="text-on-surface-variant font-caption text-caption font-normal">/100</span></span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 71%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-caption text-caption bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-space-sm rounded-b-xl">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-tertiary text-on-tertiary font-caption text-caption flex items-center justify-center font-bold">RP</div>
+<span class="text-on-surface font-medium truncate max-w-[110px]">Rajesh Patel</span>
+</div>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">schedule</span>
+            5 hours ago
+          </span>
+</div>
+</article>
+<!-- CARD 3: E-commerce Platform — Indonesia -->
+<article class="group bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between" data-market="indonesia" data-stage="synthesis">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-secondary font-medium">Synthesis Phase</span>
+<span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>
+<span class="font-caption text-caption text-on-surface-variant">SEA-ID-02</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">E-commerce Platform — Indonesia</h2>
+</div>
+<button class="h-8 w-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_horiz</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 font-caption text-caption text-on-surface-variant mb-space-md">
+<span class="material-symbols-outlined text-sm text-secondary">location_on</span>
+<span>Surabaya & Bandung</span>
+<span>•</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-on-surface">High-latency 3G</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">Evaluating cash-on-delivery trust badges and image compression on low-spec smartphones.</p>
+<!-- SVG Data Artifact Sparkline preview -->
+<div class="mb-space-md rounded-lg p-space-sm bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Latency Dropoff Curve</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">4.8s initial render</span>
+</div>
+<svg class="w-24 h-8 text-secondary overflow-visible" fill="none" viewbox="0 0 100 30">
+<path d="M0 25 C20 25, 25 15, 45 18 C65 21, 75 5, 100 8" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<circle class="fill-secondary" cx="100" cy="8" r="3"></circle>
+</svg>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-space-sm rounded-lg mb-space-md">
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Cohort</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">210 Buyers</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Completion</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">88%</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Network</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">3G Clamped</span>
+</div>
+</div>
+<div class="mb-space-md">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">diversity_3</span>
+                Inclusion Score
+              </span>
+<span class="font-label-md text-label-md text-secondary font-bold">88<span class="text-on-surface-variant font-caption text-caption font-normal">/100</span></span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 88%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-caption text-caption bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-space-sm rounded-b-xl">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-secondary text-on-secondary font-caption text-caption flex items-center justify-center font-bold">SN</div>
+<span class="text-on-surface font-medium truncate max-w-[110px]">Siti Nurhaliza</span>
+</div>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">schedule</span>
+            Yesterday
+          </span>
+</div>
+</article>
+<!-- CARD 4: AgriTech Solution — Nigeria -->
+<article class="group bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between" data-market="nigeria" data-stage="review">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed-variant font-medium">Final Review</span>
+<span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>
+<span class="font-caption text-caption text-on-surface-variant">SSA-NG-07</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">AgriTech Solution — Nigeria</h2>
+</div>
+<button class="h-8 w-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_horiz</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 font-caption text-caption text-on-surface-variant mb-space-md">
+<span class="material-symbols-outlined text-sm text-secondary">location_on</span>
+<span>Kaduna & Kano</span>
+<span>•</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-on-surface">SMS/IVR offline</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">Evaluating grain escrow and solar cold storage booking via offline push USSD.</p>
+<div class="mb-space-md rounded-lg overflow-hidden relative h-28 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Northern Nigerian agricultural cooperative farmer holding a harvest receipt next to a solar-powered grain storage silo in Kaduna, sunny afternoon, crisp clean shadows, photojournalistic enterprise style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuaxeuFEiLpD2O3lAFBOJvTxYJNZpQqt1aq4LDCNIKm90ygxRm0r2hemd1smDgdnXHGj6DK4VP-oMOpF3JKYvT-LXkgD6Twfvtr0vmkRr4tMP7IeKsDEQBzw9QTIs9jQzkNPYapB_1JuExgop2pm-Uc060k-UA8fLUFuiOWnkbkNWkSezUa4BPT7VbZoRl3xRX8RthNTTRVs4YvksynglJSDmUQqirgCgMTXp8i-hlhW7bB1z5Dh4h"/>
+<div class="absolute bottom-2 left-2 bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface px-2 py-0.5 rounded font-caption text-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary-fixed">offline_pin</span>
+<span>100% USSD Native</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-space-sm rounded-lg mb-space-md">
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Cohort</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">340 Farmers</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Completion</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">96%</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Delivery</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Zero App Data</span>
+</div>
+</div>
+<div class="mb-space-md">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">diversity_3</span>
+                Inclusion Score
+              </span>
+<span class="font-label-md text-label-md text-secondary font-bold">92<span class="text-on-surface-variant font-caption text-caption font-normal">/100</span></span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 92%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-caption text-caption bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-space-sm rounded-b-xl">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-caption text-caption flex items-center justify-center font-bold">CO</div>
+<span class="text-on-surface font-medium truncate max-w-[110px]">Chidi Okonjo</span>
+</div>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">schedule</span>
+            3 days ago
+          </span>
+</div>
+</article>
+<!-- CARD 5: Education App — Philippines -->
+<article class="group bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between" data-market="philippines" data-stage="discovery">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant font-medium">Discovery Phase</span>
+<span class="h-1.5 w-1.5 rounded-full bg-outline"></span>
+<span class="font-caption text-caption text-on-surface-variant">SEA-PH-09</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Education App — Philippines</h2>
+</div>
+<button class="h-8 w-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_horiz</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 font-caption text-caption text-on-surface-variant mb-space-md">
+<span class="material-symbols-outlined text-sm text-secondary">location_on</span>
+<span>Mindanao & Visayas</span>
+<span>•</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-on-surface">Data packet capping</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">Packet-friendly bite-sized microlearning modules with zero-rated carrier data.</p>
+<div class="mb-space-md rounded-lg p-space-sm bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Max Data Packet Limit</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">15MB / Lesson</span>
+</div>
+<div class="px-2 py-1 rounded bg-surface-container-lowest text-primary font-caption text-caption font-semibold">Zero-Rated OK</div>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-space-sm rounded-lg mb-space-md">
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Cohort</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">65 Students</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Completion</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">74%</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Media Spec</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">SVGs Only</span>
+</div>
+</div>
+<div class="mb-space-md">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-outline">diversity_3</span>
+                Inclusion Score
+              </span>
+<span class="font-label-md text-label-md text-on-surface font-bold">68<span class="text-on-surface-variant font-caption text-caption font-normal">/100</span></span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-outline rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-caption text-caption bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-space-sm rounded-b-xl">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-surface-tint text-on-primary font-caption text-caption flex items-center justify-center font-bold">MS</div>
+<span class="text-on-surface font-medium truncate max-w-[110px]">Maria Santos</span>
+</div>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">schedule</span>
+            4 days ago
+          </span>
+</div>
+</article>
+<!-- CARD 6: Digital Micro-Credit Wallet — Colombia & Peru -->
+<article class="group bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between" data-market="latin-america" data-stage="fieldwork">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed text-primary font-medium">Fieldwork</span>
+<span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+<span class="font-caption text-caption text-on-surface-variant">LATAM-CO-03</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Digital Micro-Credit Wallet — Colombia & Peru</h2>
+</div>
+<button class="h-8 w-8 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">more_horiz</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 font-caption text-caption text-on-surface-variant mb-space-md">
+<span class="material-symbols-outlined text-sm text-secondary">location_on</span>
+<span>Bogota & Lima</span>
+<span>•</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-on-surface">Low digital literacy</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">Biometric KYC and audio onboarding for informal street vendors.</p>
+<div class="mb-space-md rounded-lg overflow-hidden relative h-28 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="An informal street merchant in Bogota Colombia testing an audio-guided biometric registration prompt on a basic smartphone, authentic urban street environment with colorful storefronts, realistic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4yYwieRuv24GnovTDAsKhOqqPAuR4lklAH9xd91Rfc-Tv0jBzDNx4OL7snwqhUbE36NYdjZp4ruAAyAfiYdY3RyvH06uIerrhVplblwJLYLCzRydP2QRzvDQ8YuMJrEw7VdpxA05E-nMU69-X53_yCd80vPLwbIUKp4tJ43t3Vk9luKu0v1x-hxyUgeLAqWRo4s3hpEC3Szsi8dS0mtj9DekIoUimHj55kb_Xu2WdSOGqYiGs2ofq"/>
+<div class="absolute bottom-2 left-2 bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface px-2 py-0.5 rounded font-caption text-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary-fixed">fingerprint</span>
+<span>Audio Onboarding Active</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-space-sm rounded-lg mb-space-md">
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Cohort</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">90 Vendors</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Completion</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">81%</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block">Dialect</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Local Spanish</span>
+</div>
+</div>
+<div class="mb-space-md">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">diversity_3</span>
+                Inclusion Score
+              </span>
+<span class="font-label-md text-label-md text-primary font-bold">79<span class="text-on-surface-variant font-caption text-caption font-normal">/100</span></span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 79%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-caption text-caption bg-surface-container-low/50 -mx-space-lg -mb-space-lg px-space-lg py-space-sm rounded-b-xl">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-secondary-fixed-dim text-on-secondary-fixed font-caption text-caption flex items-center justify-center font-bold">CM</div>
+<span class="text-on-surface font-medium truncate max-w-[110px]">Carlos Mendez</span>
+</div>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">schedule</span>
+            6 days ago
+          </span>
+</div>
+</article>
+</div>
+</section>
+<!-- INTEGRATED FLUENT CREATION MODAL / ACRYLIC PREVIEW (Hidden by default, triggered via '+ Create Project') -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-inverse-surface/40 backdrop-blur-sm transition-opacity opacity-0 pointer-events-none duration-200" id="createProjectModal">
+<div class="bg-surface-container-lowest w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh] transform transition-transform scale-95 duration-200" id="modalDialogCard">
+<!-- Modal Header (Fluent Style) -->
+<div class="px-space-xl py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-base">domain_add</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Initialize Field Study Protocol</h2>
+<p class="font-caption text-caption text-on-surface-variant">Emerging Markets UX Matrix • Windows 11 Fluent Spec</p>
+</div>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" id="closeModalBtn" type="button">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<!-- Modal Body (Fluent Form Inputs) -->
+<div class="p-space-xl overflow-y-auto space-y-space-md">
+<!-- Project Title -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Project Title <span class="text-error">*</span></label>
+<input class="w-full h-9 px-3 bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" placeholder="e.g. Offline USSD Remittance Loop — Rural Ghana" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Target Market -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Target Country / Market <span class="text-error">*</span></label>
+<div class="relative">
+<select class="w-full h-9 pl-3 pr-8 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-primary">
+<option>Kenya (Nairobi, Kisumu, Eldoret)</option>
+<option>India (Bihar, UP, Rural Hubs)</option>
+<option>Indonesia (Tier-2/3 Municipalities)</option>
+<option>Nigeria (Lagos, Kano, Kaduna)</option>
+<option>Philippines (Visayas & Rural Luzon)</option>
+<option>Colombia & Peru</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-xs text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Target Cohort Size -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Target Cohort Size <span class="text-error">*</span></label>
+<div class="relative">
+<input class="w-full h-9 px-3 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" type="number" value="120"/>
+<span class="absolute right-3 top-2 font-caption text-caption text-on-surface-variant">Participants</span>
+</div>
+</div>
+</div>
+<!-- Hypothesis & Objectives -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Research Hypothesis & Objectives</label>
+<textarea class="w-full p-3 bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-primary shadow-inner resize-none" placeholder="Outline low-bandwidth friction, vernacular cognitive overhead, or offline recovery goals..." rows="3"></textarea>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Connectivity Profile -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Connectivity Profile</label>
+<div class="relative">
+<select class="w-full h-9 pl-3 pr-8 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-primary">
+<option>2G Extreme Latency (>1200ms)</option>
+<option>3G Fluctuation / Capped</option>
+<option>Full Offline / SMS Fallback</option>
+<option>Hybrid 4G Intermittent</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-xs text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Primary Language -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Primary Language</label>
+<div class="relative">
+<select class="w-full h-9 pl-3 pr-8 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-primary">
+<option>Swahili / Sheng (Kenya)</option>
+<option>Vernacular Hindi / Bhojpuri</option>
+<option>Bahasa Indonesia (Colloquial)</option>
+<option>Hausa / Yoruba / Pidgin</option>
+<option>Tagalog / Cebuano</option>
+<option>Spanish (Latin America)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-xs text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Target Deadline -->
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Cohort Deadline</label>
+<input class="w-full h-9 px-3 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" type="date" value="2025-06-30"/>
+</div>
+</div>
+<!-- Compliance & Inclusion Checkbox -->
+<div class="p-space-md rounded-lg bg-surface-container flex items-start gap-space-sm">
+<input checked="" class="mt-0.5 rounded text-primary focus:ring-primary" id="consentCheck" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface" for="consentCheck">
+            Apply automated Inclusion Benchmark (v2.4) telemetry logging for illiterate or first-time digital users.
+          </label>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="px-space-xl py-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="h-9 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg transition-colors" id="cancelModalBtn" type="button">
+          Cancel
+        </button>
+<button class="h-9 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg transition-colors" id="saveDraftBtn" type="button">
+          Save as Draft
+        </button>
+<button class="h-9 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded-lg flex items-center gap-1.5 shadow-md shadow-primary/20 transition-all active:scale-95" id="launchStudyBtn" type="button">
+<span class="material-symbols-outlined text-base">rocket_launch</span>
+<span>Launch Study</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Container -->
+<div class="fixed bottom-10 right-8 bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-xl flex items-center gap-3 transform translate-y-16 opacity-0 transition-all duration-300 pointer-events-none z-50" id="toastNotification">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toastMessage">Field Cohort initialized successfully.</span>
+</div>
+</div>
+<script>
+  (function() {
+    // Modal toggle mechanics
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const cancelModalBtn = document.getElementById('cancelModalBtn');
+    const modal = document.getElementById('createProjectModal');
+    const modalDialogCard = document.getElementById('modalDialogCard');
+    const launchStudyBtn = document.getElementById('launchStudyBtn');
+    const saveDraftBtn = document.getElementById('saveDraftBtn');
+    const toast = document.getElementById('toastNotification');
+    const toastMessage = document.getElementById('toastMessage');
+
+    function showToast(msg) {
+      toastMessage.textContent = msg;
+      toast.classList.remove('translate-y-16', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-16', 'opacity-0', 'pointer-events-none');
+      }, 3000);
+    }
+
+    function openModal() {
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modalDialogCard.classList.remove('scale-95');
+      modalDialogCard.classList.add('scale-100');
+    }
+
+    function closeModal() {
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modalDialogCard.classList.remove('scale-100');
+      modalDialogCard.classList.add('scale-95');
+    }
+
+    openModalBtn?.addEventListener('click', openModal);
+    closeModalBtn?.addEventListener('click', closeModal);
+    cancelModalBtn?.addEventListener('click', closeModal);
+
+    launchStudyBtn?.addEventListener('click', () => {
+      closeModal();
+      showToast('Field research study deployed to regional nodes.');
+    });
+
+    saveDraftBtn?.addEventListener('click', () => {
+      closeModal();
+      showToast('Draft study protocol saved.');
+    });
+
+    // Close modal on backdrop click
+    modal?.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Toggle Card 1 Context Menu
+    const menuTriggerBtn1 = document.getElementById('menuTriggerBtn1');
+    const contextDropdown1 = document.getElementById('contextDropdown1');
+
+    menuTriggerBtn1?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      contextDropdown1?.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (contextDropdown1 && !contextDropdown1.contains(e.target) && e.target !== menuTriggerBtn1) {
+        contextDropdown1.classList.add('hidden');
+      }
+    });
+
+    // Search and Filter logic
+    const searchInput = document.getElementById('searchInput');
+    const clearSearch = document.getElementById('clearSearch');
+    const marketFilter = document.getElementById('marketFilter');
+    const stageFilter = document.getElementById('stageFilter');
+    const cards = document.querySelectorAll('#projectsGrid > article');
+
+    function applyFilters() {
+      const query = (searchInput?.value || '').toLowerCase().trim();
+      const market = marketFilter?.value || 'all';
+      const stage = stageFilter?.value || 'all';
+
+      if (query.length > 0) {
+        clearSearch?.classList.remove('hidden');
+      } else {
+        clearSearch?.classList.add('hidden');
+      }
+
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        const cardMarket = card.getAttribute('data-market');
+        const cardStage = card.getAttribute('data-stage');
+
+        const matchesQuery = query === '' || text.includes(query);
+        const matchesMarket = market === 'all' || cardMarket === market;
+        const matchesStage = stage === 'all' || cardStage === stage;
+
+        if (matchesQuery && matchesMarket && matchesStage) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    searchInput?.addEventListener('input', applyFilters);
+    marketFilter?.addEventListener('change', applyFilters);
+    stageFilter?.addEventListener('change', applyFilters);
+
+    clearSearch?.addEventListener('click', () => {
+      if (searchInput) {
+        searchInput.value = '';
+        applyFilters();
+      }
+    });
+
+    // Export CSV Demo
+    const exportCsvBtn = document.getElementById('exportCsvBtn');
+    exportCsvBtn?.addEventListener('click', () => {
+      showToast('Compiling 6 project metrics into CSV...');
+    });
+
+    // Grid / List Toggle visual indicator
+    const viewGridBtn = document.getElementById('viewGridBtn');
+    const viewListBtn = document.getElementById('viewListBtn');
+    const projectsGrid = document.getElementById('projectsGrid');
+
+    viewListBtn?.addEventListener('click', () => {
+      viewListBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      viewListBtn.classList.remove('text-on-surface-variant');
+      viewGridBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      viewGridBtn.classList.add('text-on-surface-variant');
+      projectsGrid.classList.remove('lg:grid-cols-3', 'md:grid-cols-2');
+      projectsGrid.classList.add('grid-cols-1');
+    });
+
+    viewGridBtn?.addEventListener('click', () => {
+      viewGridBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      viewGridBtn.classList.remove('text-on-surface-variant');
+      viewListBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      viewListBtn.classList.add('text-on-surface-variant');
+      projectsGrid.classList.add('lg:grid-cols-3', 'md:grid-cols-2');
+      projectsGrid.classList.remove('grid-cols-1');
+    });
+
+  })();
+</script></main><footer class="h-7 bg-surface-container-low px-gutter-desktop flex items-center justify-between text-on-surface-variant font-caption text-caption"><div class="flex items-center gap-3"><span class="flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>All systems operational</span><span>|</span><span>Inclusion Benchmark: v2.4 Active</span></div><div class="flex items-center gap-3"><span>Sync: Connected (42ms)</span><span>|</span><span>8 Target Markets Tracked</span></div></footer></div></body></html>
